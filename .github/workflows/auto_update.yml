@@ -38,7 +38,6 @@ jobs:
         run: |
           git config --global user.email "hsiangjenli@gmail.com"
           git config --global user.name "hsiangjenli"
-          git config --global user.password "${{ env.ACCESS_TOKEN }}"
           
           git submodule sync --recursive
           git submodule update --remote --recursive
@@ -47,6 +46,7 @@ jobs:
             cd hsiangjenli.github.io
             git config --global user.email "hsiangjenli@gmail.com"
             git config --global user.name "hsiangjenli"
+            git config --global user.password "${{ env.ACCESS_TOKEN }}"
             git add .
             git commit -m "auto: update output files"
             git push origin main
