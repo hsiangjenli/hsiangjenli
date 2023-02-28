@@ -33,6 +33,6 @@ jobs:
       - name: Update submodule
         run: |
           git submodule update --remote --recursive
-          git add path/to/submodule
+          git add hsiangjenli.github.io
           git commit -m "Update submodule"
           git push
