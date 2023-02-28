@@ -32,8 +32,8 @@ jobs:
 
       - name: Update submodule
         run: |
-        git config --global user.email "hsiangjenli@gmail.com"
-        git config --global user.name "hsiangjenli"
+          git config --global user.email "hsiangjenli@gmail.com"
+          git config --global user.name "hsiangjenli"
           git submodule update --remote --recursive
           git add hsiangjenli.github.io
           git commit -m "Update submodule"
