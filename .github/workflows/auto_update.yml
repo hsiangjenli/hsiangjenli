@@ -35,9 +35,9 @@ jobs:
           git config --global user.email "hsiangjenli@gmail.com"
           git config --global user.name "hsiangjenli"
           git submodule update --remote --recursive
-          git add hsiangjenli.github.io
           
           if [[ -n $(git status -s) ]]; then
-            git commit -m "auto: update submodule"
+            git add .
+            git commit -m "auto: update output files"
             git push
           fi          
