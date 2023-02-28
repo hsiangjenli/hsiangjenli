@@ -34,10 +34,15 @@ jobs:
         run: |
           git config --global user.email "hsiangjenli@gmail.com"
           git config --global user.name "hsiangjenli"
+          
+          git submodule sync --recursive
           git submodule update --remote --recursive
           
           if [[ -n $(git status -s) ]]; then
+            cd hsiangjenli.github.io
             git add .
+            git commit -m "auto: update output files"
+            cd ..
             git commit -m "auto: update output files"
             git push
           fi          
