@@ -44,7 +44,7 @@ jobs:
             git config --global user.name "hsiangjenli"
             git add .
             git commit -m "auto: update output files"
-            git push origin master
+            git push origin main
             cd ..
             git add .
             git commit -m "auto: update output files"
