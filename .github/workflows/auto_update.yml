@@ -36,5 +36,8 @@ jobs:
           git config --global user.name "hsiangjenli"
           git submodule update --remote --recursive
           git add hsiangjenli.github.io
-          git commit -m "Update submodule"
-          git push
+          
+          if [[ -n $(git status -s) ]]; then
+            git commit -m "auto: update submodule"
+            git push
+          fi          
