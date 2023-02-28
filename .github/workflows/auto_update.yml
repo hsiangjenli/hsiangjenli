@@ -42,6 +42,7 @@ jobs:
             cd hsiangjenli.github.io
             git add .
             git commit -m "auto: update output files"
+            git push origin master
             cd ..
             git commit -m "auto: update output files"
             git push
