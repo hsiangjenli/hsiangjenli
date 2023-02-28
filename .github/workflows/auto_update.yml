@@ -12,6 +12,19 @@ jobs:
       ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
     
     steps:
+
+      - name: Set up Git
+        env:
+          GIT_USER_EMAIL: hsiangjenli@gmail.com
+          GIT_USER_NAME: hsiangjenli
+          GIT_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        
+        run: |
+          git config --global user.email "${GIT_USER_EMAIL}"
+          git config --global user.name "${GIT_USER_NAME}"
+          git config --global credential.helper store
+      
+      
       - name: Checkout code
         uses: actions/checkout@v2
         with:
@@ -36,17 +49,13 @@ jobs:
 
       - name: Update submodule
         run: |
-          git config --global user.email "hsiangjenli@gmail.com"
-          git config --global user.name "hsiangjenli"
-          
           git submodule sync --recursive
           git submodule update --remote --recursive
           
           if [[ -n $(git status -s) ]]; then
             cd hsiangjenli.github.io
-            git config --global user.email "hsiangjenli@gmail.com"
-            git config --global user.name "hsiangjenli"
-            git config --global user.password "${{ env.ACCESS_TOKEN }}"
+            git config --global user.email "${GIT_USER_EMAIL}"
+            git config --global user.name "${GIT_USER_NAME}"
             git add .
             git commit -m "auto: update output files"
             git push origin main
@@ -54,4 +63,4 @@ jobs:
             git add .
             git commit -m "auto: update output files"
             git push
-          fi          
+          fi      
