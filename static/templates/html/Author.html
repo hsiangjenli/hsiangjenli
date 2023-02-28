@@ -1,0 +1,24 @@
+<img class="character center" src="{{ author['Profile'] }}" />
+
+<div class="center pt-5 pb-3">
+    <div class="h1 b">{{ author['Name']['English'] }} <text class="h4">{{ author['Name']['NickName'] }}</text></div>
+
+    {% if author['Name']['Others']['Pronunciation'] %}
+    <img class='m-1' width='180px' src="{{ author['Name']['Others']['Pronunciation'] }}">
+    {% endif %}
+
+
+    <div class="row justify-content-center m-3">
+
+        {% for social_link in social_links %}
+            <span class="social-badge">
+                <a href="{{ social_links[social_link]['Home'] }}">
+                    <i class="{{ social_links[social_link]['Font_Awesome'] }} social-badge"
+                        style="background-color: {{ social_links[social_link]['BG_Color'] }}; color: white;"></i>
+                </a>
+            </span>
+        {% endfor %}
+
+    </div>
+
+</div>

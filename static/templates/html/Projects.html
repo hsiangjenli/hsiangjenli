@@ -1,0 +1,34 @@
+{% block content %}
+<div class="row row-cols-1 row-cols-md-3 g-4">
+
+    {% for project in projects %}
+    <div class="col">
+        <div class="card">
+
+            {% if projects[project]['Cover'] %}
+            <img src="{{ projects[project]['Cover'] }}" class="card-img-top">
+            {% else %}
+            <img src="static/image/error.svg" class="card-img-top">
+            {% endif %}
+
+            <div class="card-body">
+                <h5 class="card-title b h6">{{ projects[project]['Name'] }}</h5>
+
+                <text class="text-black-50"><small>{{ projects[project]['Year'] }}</small></text>
+                
+                <p class="card-text">
+                {% for tag in projects[project]['Tags'] %}
+                    <span class="badge rounded-pill bg-secondary mt-1">{{ tag }}</span>
+                {% endfor %}
+                </p>
+
+                {% if projects[project]['Documentation'] %} <a href="{{ projects[project]['Documentation'] }}"> 🌐 </a> {% endif %}
+
+            </div>
+
+        </div>
+    </div>
+    {% endfor %}
+
+</div>
+{% endblock %}

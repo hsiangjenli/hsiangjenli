@@ -1,0 +1,13 @@
+{% extends "html/base/block.html" %}
+
+{% block content %}
+    {% for award in awards %}
+    <div class="row pt-2 pb-2 align-items-center">
+        <div class="col-1"><img class='edu-logo' src="{{ awards[award]['Cover'] }}"></div>
+        <div class="col-11">
+            <text class="h5 b">{{ awards[award]['Name']['Host'] }}</text><br>
+            <text class="">{{ awards[award]['Name']['English'] }}</text>
+        </div>
+    </div>
+    {% endfor %}
+{% endblock %}

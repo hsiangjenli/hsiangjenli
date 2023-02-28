@@ -1,0 +1,139 @@
+body {
+    background-color: f2f2f2;
+    font-family: 'Jost', jf-openhuninn, sans-serif;
+    color: 3b3838;
+}
+
+.bg-img {
+    background-image: url("../image/background.svg");
+    position: relative;
+}
+
+.container-fluid {
+    padding: calc(20% - 55px);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+
+
+/* FONT */
+@font-face {
+    font-family: 'jf-openhuninn';
+    src: url('../font/jf-openhuninn/jf-openhuninn.ttf') format('truetype');
+    /* font-weight: normal;
+    font-style: normal; */
+}
+
+.b {
+    font-weight: 700;
+}
+
+h1,
+h2 {
+    font-weight: bolder;
+}
+
+h2 {
+    padding-top: 2rem;
+}
+
+/* IMAGE */
+.character {
+    width: 225px;
+    animation: beat 1s infinite alternate;
+
+}
+
+@keyframes beat {
+    to {
+        transform: scale(1.05);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .character {
+        padding-top: 5rem;
+        width: 130px;
+    }
+}
+
+.edu-logo {
+    width: calc(100%);
+    /* min-width: 30px; */
+}
+
+.card-img-top {
+    height: 150px;
+    object-fit: cover;
+    /* filter: blur(1px) saturate(80%); */
+}
+
+/* TEXT */
+.block {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 1rem;
+    backdrop-filter: blur(2px);
+}
+
+.social-badge {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* .social-badge a,
+.social-badge i {
+    display: inline-block,
+    
+} */
+
+
+
+
+/* COMPETITION */
+.fa-trophy {
+    color: goldenrod;
+}
+
+.fa-award {
+    color: 9f7e30;
+}
+
+.competition {
+    text-align: center;
+}
+
+@media (max-width: 767.98px) {
+    .competition {
+        display: none;
+    }
+}
+
+/* CARD-PROJECT */
+.card {
+    border-radius: 1rem;
+    border-color: transparent;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(2px);
+}
+
+.card-img-top {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}

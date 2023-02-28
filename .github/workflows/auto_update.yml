@@ -1,0 +1,38 @@
+name: Update submodule
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  update-submodule:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          submodules: 'recursive' # 確保將子模組一同下載
+      
+      
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      
+      - name: Run Python script
+        run: python auto_update.py
+
+
+      - name: Update submodule
+        run: |
+          git submodule update --remote --recursive
+          git add path/to/submodule
+          git commit -m "Update submodule"
+          git push
