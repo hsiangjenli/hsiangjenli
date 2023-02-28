@@ -15,12 +15,10 @@ jobs:
 
       - name: Set up Git
         env:
-          GIT_USER_EMAIL: hsiangjenli@gmail.com
-          GIT_USER_NAME: hsiangjenli
           GIT_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         
         run: |
-          git config --global user.email "${env.GIT_USER_EMAIL}"
+          git config --global user.email "hsiangjenli@gmail.com"
           git config --global user.name "hsiangjenli"
           git config --global credential.helper store
       
