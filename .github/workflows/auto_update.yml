@@ -46,6 +46,7 @@ jobs:
             git commit -m "auto: update output files"
             git push origin master
             cd ..
+            git add .
             git commit -m "auto: update output files"
             git push
           fi          
