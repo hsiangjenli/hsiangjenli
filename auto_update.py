@@ -20,12 +20,7 @@ template_md = SetEnvironemnt(folder='static/templates', template='README.md')
 template_html = SetEnvironemnt(folder=['static/templates', 'static'], template='index.html')
 
 meta_data = {
-<<<<<<< HEAD
     'static': 'https://hsiangjenli.github.io/hsiangjenli/static',
-=======
-    # 'static': 'file:///C:/Users/ASUS/Documents/Github/hsiangjenli/static/',
-    'static': 'https://hsiangjenli.github.io/hsiangjenli/static/',
->>>>>>> main
     'author':config['Author'],
     'educations':config['Education'],
     'awards':config['Award'],
