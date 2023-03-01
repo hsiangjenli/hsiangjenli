@@ -3,9 +3,9 @@ Name.English = 'Hsiang-Jen-Li'
 Name.NickName = 'RN'
 
 Name.Others.Original = '李享紝'
-Name.Others.Pronunciation = 'static/image/李享紝.svg'
+Name.Others.Pronunciation = 'image/李享紝.svg'
 
-Profile = 'static/image/logo.svg'
+Profile = 'image/logo.svg'
 Mail = 'hsiangjenli@gmail.com'
 
 [Social_Media]
@@ -44,7 +44,7 @@ Mail = 'hsiangjenli@gmail.com'
     University.Name = 'National Taiwan University of Science and Technology'
     University.Others = '國立臺灣科技大學'
     University.Country = 'Taiwan'
-    University.Logo = 'static/image/ntust.png'
+    University.Logo = 'image/ntust.png'
     Major.Name = 'Department of Industrial Management'
     Major.Others = '工管所（大數據與資訊安全）'
     Graduation = false
@@ -53,7 +53,7 @@ Mail = 'hsiangjenli@gmail.com'
     University.Name = 'National Kaohsiung University of Science and Technology'
     University.Others = '國立高雄科技大學'
     University.Country = 'Taiwan'
-    University.Logo = 'static/image/nkust.png'
+    University.Logo = 'image/nkust.png'
     Major.Name = 'Department of Money and Banking'
     Major.Others = '金融系（2022）'
     Graduation = true
@@ -136,12 +136,12 @@ Mail = 'hsiangjenli@gmail.com'
   [Skills.Python]
   Title = 'Python'
   Description = 'I have extensive experience using Python for both static and dynamic web scraping, as well as building dynamic web pages using Django. I am well-versed in utilizing data analysis and machine learning packages such as Pandas, Numpy, and scikit-learn. Additionally, I am able to integrate databases through Python programming.'
-  Image = 'static/image/python.svg'
+  Image = 'image/python.svg'
 
   [Skills.Docker]
   Title = 'Docker'
   Description = 'Basic operations'
-  Image = 'static/image/docker.svg'
+  Image = 'image/docker.svg'
 
   [Skills.Database]
   Title = 'Database'
