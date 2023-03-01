@@ -20,6 +20,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
       with:
+        ref: main  # 指定要检出的分支或标签
         token: ${{ secrets.ACCESS_TOKEN }}
         submodules: true
 
