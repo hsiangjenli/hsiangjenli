@@ -32,7 +32,7 @@ Bachelor in Department of Money and Banking
 
 
 <tr>
-    <td> <img width='40px' src="http://ee.nkust.edu.tw/wp-content/uploads/2019/05/cropped-IMG_6400-192x192.png"> </td>
+    <td> <img width='40px' src="https://user-images.githubusercontent.com/71996166/222050262-a19f4b61-0d9a-4149-b540-528e0e03f75f.png"> </td>
     <td> 2022 </td>
     <td> <b> National Kaohsiung University of Science and Technology - Electrical Engineering </b><br>Joint Exhibition on Artificial Intelligence and Neural Networks </td>
     <td> 1 </td>
