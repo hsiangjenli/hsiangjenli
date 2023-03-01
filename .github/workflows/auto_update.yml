@@ -20,10 +20,16 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
       with:
+        ref: main  # 指定要检出的分支或标签
         token: ${{ secrets.ACCESS_TOKEN }}
         submodules: true
 
-
+    # Update references
+    - name: Git Sumbodule Update
+      run: |
+        git pull --recurse-submodules
+        git submodule update --remote --recursive
+        
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
@@ -38,11 +44,7 @@ jobs:
         python auto_update.py
 
 
-    # Update references
-    - name: Git Sumbodule Update
-      run: |
-        git pull --recurse-submodules
-        git submodule update --remote --recursive
+
 
     - name: Commit update
       run: |
