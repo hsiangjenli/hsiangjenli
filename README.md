@@ -12,11 +12,11 @@
 </a>
 </div>  
 
-**### National Taiwan University of Science and Technology**, Taiwan  
+**<h3>National Taiwan University of Science and Technology**, Taiwan</h3>  
 Master in Department of Industrial Management
 
 
-**### National Kaohsiung University of Science and Technology**, Taiwan  
+**<h3>National Kaohsiung University of Science and Technology**, Taiwan</h3>  
 Bachelor in Department of Money and Banking
 
   
