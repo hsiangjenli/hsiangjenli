@@ -17,9 +17,11 @@ def SetEnvironemnt(folder: str, template: str):
 config = LoadConfig(fname='config/_readme.toml')
 
 template_md = SetEnvironemnt(folder='static/templates', template='README.md')
-template_html = SetEnvironemnt(folder='static/templates', template='index.html')
+template_html = SetEnvironemnt(folder=['static/templates', 'static'], template='index.html')
 
 meta_data = {
+    # 'static': 'file:///C:/Users/ASUS/Documents/Github/hsiangjenli/static/',
+    'static': 'https://hsiangjenli.github.io/hsiangjenli/static/',
     'author':config['Author'],
     'educations':config['Education'],
     'awards':config['Award'],
