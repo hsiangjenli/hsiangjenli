@@ -1,66 +1,37 @@
-name: Update submodule
+name: 'Submodules Sync'
 
 on:
+  # Allows you to run this workflow manually from the Actions tab or through HTTP API
   push:
-    branches: [main]
+    branches: [test/githubworkflow]
 
 jobs:
-  update-submodule:
-    permissions:
-      contents: write
-      
+  sync:
+    name: 'Submodules Sync'
     runs-on: ubuntu-latest
-    
-    env:
-      ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-    
+
+    # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
+    defaults:
+      run:
+        shell: bash
+
     steps:
+    # Checkout the repository to the GitHub Actions runner
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.CI_TOKEN }}
+        submodules: true
 
-      - name: Set up Git
-        env:
-          GIT_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        
-        run: |
-          git config --global user.email "hsiangjenli@gmail.com"
-          git config --global user.name "hsiangjenli"
-          git config --global credential.helper store
-      
-      
-      - name: Checkout code
-        uses: actions/checkout@v2
-        with:
-          submodules: 'recursive' # 確保將子模組一同下載
-      
-      
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.9'
+    # Update references
+    - name: Git Sumbodule Update
+      run: |
+        git pull --recurse-submodules
+        git submodule update --remote --recursive
 
-      
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      
-      - name: Run Python script
-        run: python auto_update.py
-
-
-      - name: Update submodule
-        run: |
-          git submodule sync --recursive
-          git submodule update --remote --recursive
-          if [[ -n $(git status -s) ]]; then
-            cd hsiangjenli.github.io
-            git config --global user.email "hsiangjenli@gmail.com"
-            git config --global user.name "hsiangjenli"
-            git add .
-            git commit -m "auto: update output files"
-            git push origin main
-            cd ..
-            git add .
-            git commit -m "auto: update output files"
-            git push
-          fi      
+    - name: Commit update
+      run: |
+        git config --global user.name 'Git bot'
+        git config --global user.email 'bot@noreply.github.com'
+        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        git commit -am "Auto updated submodule references" && git push || echo "No changes to commit"
