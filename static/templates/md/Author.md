@@ -3,7 +3,7 @@
 
 # **{{ author['Name']['English'] }}** <small><small><small><small> {{ author['Name']['NickName'] }} </small></small></small></small>
 
-<img height="55px" src="{{ static }}{{ author['Name']['Others']['Pronunciation'] }}">
+<img height="50px" src="{{ static }}{{ author['Name']['Others']['Pronunciation'] }}">
 
 <a href="mailto: {{ author['Mail'] }}">
     
