@@ -3,7 +3,7 @@
 
 # **Hsiang-Jen-Li** <small><small><small><small> RN </small></small></small></small>
 
-<img height="55px" src="https://hsiangjenli.github.io/hsiangjenli/static/image/李享紝.svg">
+<img height="45px" src="https://hsiangjenli.github.io/hsiangjenli/static/image/李享紝.svg">
 
 <a href="mailto: hsiangjenli@gmail.com">
     
@@ -12,21 +12,51 @@
 </a>
 </div>  
 
-**National Taiwan University of Science and Technology**, Taiwan  
-Master in Department of Industrial Management
+### **Education**
+<table>
 
 
-**National Kaohsiung University of Science and Technology**, Taiwan  
-Bachelor in Department of Money and Banking
+<tr>
+    <td>
+        <img align="center" width='40px' src="static/image/ntust.png">
+    </td>
+    <td>
+        2024
+    </td>
+    <td>
+        <b>National Taiwan University of Science and Technology</b>, Taiwan <br>
+        Master in Department of Industrial Management
+    </td>
+    <td>Big data analytics and information security</td>
+</tr>
 
-  
+
+
+<tr>
+    <td>
+        <img align="center" width='40px' src="static/image/nkust.png">
+    </td>
+    <td>
+        2022
+    </td>
+    <td>
+        <b>National Kaohsiung University of Science and Technology</b>, Taiwan <br>
+        Bachelor in Department of Money and Banking
+    </td>
+    <td> </td>
+</tr>
+
+
+</table>  
+
+### **Competition**
 <table>
 
 <tr>
-    <td>Host</td>
-    <td>Year</td>
-    <td>Competition Name</td>
-    <td>Ranking</td>
+    <td><b>Host</b></td>
+    <td><b>Year</b></td>
+    <td><b>Competition Name</b></td>
+    <td><b>Ranking</b></td>
 </tr>
 
 
@@ -54,3 +84,92 @@ Bachelor in Department of Money and Banking
 
 
 </table>  
+
+### **Side Project**
+<table>
+<tr>
+    <td><b>Year</b></td>
+    <td><b>Name</b></td>
+    <td><b>Tags</b></td>
+    <td><b>Documentation</b></td>
+</tr>
+
+<tr>
+
+<td>2022</td>
+<td>Rutens</td>
+<td>
+
+`SQLite` `CKIP-transformer` `Regular-Expression` `POS-tagging` `dimension-reduction` `cluster` 
+
+</td>
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>2022</td>
+<td>Apriori-J104-工作技能關聯性分析</td>
+<td>
+
+`Web Scraping` `pyvis` `apyori` `ckip-transformers` 
+
+</td>
+<td> <a href="https://hsiangjenli.gitlab.io/apriori-j104/README.html"> 🌐 </a> </td>
+
+</tr>
+
+<tr>
+
+<td>2022</td>
+<td>NKUST-Django-Public-Opinion-Analysis-輿情分析網頁</td>
+<td>
+
+`Web Scraping` `Django` `MongoDB` `Bootstrap` `plotly.js` `Anue` `TWSE` 
+
+</td>
+<td> <a href="https://gitlab.com/hsiangjenli/NKUST-1102-Django-POA-Midterm-Project/-/wikis/home"> 🌐 </a> </td>
+
+</tr>
+
+<tr>
+
+<td>2021</td>
+<td>TWSE-台灣證券交易所</td>
+<td>
+
+`Web Scraping` 
+
+</td>
+<td> <a href="https://github.com/hsiangjenli/Web-Scraping-Challenge/tree/main/TWSE｜台灣證券交易所"> 🌐 </a> </td>
+
+</tr>
+
+<tr>
+
+<td>2021</td>
+<td>Anue-鉅亨網</td>
+<td>
+
+`Web Scraping` `MongoDB` 
+
+</td>
+<td> <a href="https://gitlab.com/tuxedo-web-scraping/anue"> 🌐 </a> </td>
+
+</tr>
+
+<tr>
+
+<td>2020</td>
+<td>LineBot-股票資訊查詢</td>
+<td>
+
+`Line-Bot` `Heroku` `mplfinance` `yfinance` 
+
+</td>
+<td> <a href="https://github.com/hsiangjenli/LineBot-STOCK.tw-Public"> 🌐 </a> </td>
+
+</tr>
+
+</table>

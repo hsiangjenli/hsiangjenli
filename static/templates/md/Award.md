@@ -1,10 +1,10 @@
 <table>
 
 <tr>
-    <td>Host</td>
-    <td>Year</td>
-    <td>Competition Name</td>
-    <td>Ranking</td>
+    <td><b>Host</b></td>
+    <td><b>Year</b></td>
+    <td><b>Competition Name</b></td>
+    <td><b>Ranking</b></td>
 </tr>
 
 {% for award in awards %}
