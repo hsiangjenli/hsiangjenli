@@ -46,7 +46,8 @@ Mail = 'hsiangjenli@gmail.com'
     University.Country = 'Taiwan'
     University.Logo = 'image/ntust.png'
     Major.Name = 'Department of Industrial Management'
-    Major.Others = '工管所（大數據與資訊安全）'
+    Major.Others = 'Big data analytics and information security'
+    Year = '2024'
     Graduation = false
 
   [Education.Bachelor]
@@ -55,7 +56,8 @@ Mail = 'hsiangjenli@gmail.com'
     University.Country = 'Taiwan'
     University.Logo = 'image/nkust.png'
     Major.Name = 'Department of Money and Banking'
-    Major.Others = '金融系（2022）'
+    Major.Others = ' '
+    Year = '2022'
     Graduation = true
 
 [Award]
