@@ -156,6 +156,6 @@ Mail = 'hsiangjenli@gmail.com'
   Image = 'image/Ubuntu.png'
 
   [Skills.git]
-  Title = 'git'
-  Description = 'I am proficient in using Git and GitHub for project development, familiar with basic Git commands.'
-  Image = 'image/git.png'
+  Title = 'git & GitHub'
+  Description = 'I am proficient in using GitHub Workflow for automated deployment, and I am familiar with the basics of Git.'
+  Image = 'image/git.svg'
