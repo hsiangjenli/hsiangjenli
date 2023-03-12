@@ -141,7 +141,7 @@
 <td>TWSE-台灣證券交易所</td>
 <td>
 
-`Web Scraping` 
+`Web Scraping` `SQLite` `plotly` 
 
 </td>
 <td> <a href="https://github.com/hsiangjenli/Web-Scraping-Challenge/tree/main/TWSE｜台灣證券交易所"> 🌐 </a> </td>
