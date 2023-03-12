@@ -116,7 +116,7 @@ Mail = 'hsiangjenli@gmail.com'
   [Personal_Project.TWSE]
   Year = '2021'
   Name = 'TWSE-台灣證券交易所'
-  Tags = ['Web Scraping']
+  Tags = ['Web Scraping', 'SQLite', 'plotly']
   Documentation = 'https://github.com/hsiangjenli/Web-Scraping-Challenge/tree/main/TWSE｜台灣證券交易所'
   Cover = ''
 
