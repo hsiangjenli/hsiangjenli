@@ -3,7 +3,7 @@
 {% block content %}
     {% for edu in educations %}
     <div class="row pt-2 pb-2 align-items-center">
-        <div class="col-1"><img class='edu-logo' src="{{ static }}{{ educations[edu]['University']['Logo'] }}"></div>
+        <div class="col-1"><img class='edu-logo' src="{{ static }}/{{ educations[edu]['University']['Logo'] }}"></div>
         <div class="col-11">
             <text class="h5 b">{{ educations[edu]['University']['Name'] }}, {{ educations[edu]['University']['Country'] }}</text><br>
             <text class="h6">{{ educations[edu]['Major']['Name'] }}</text>

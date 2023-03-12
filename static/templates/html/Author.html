@@ -1,10 +1,10 @@
-<img class="character center" src="{{ static }}{{ author['Profile'] }}" />
+<img class="character center" src="{{ static }}/{{ author['Profile'] }}" />
 
 <div class="center pt-5 pb-3">
     <div class="h1 b">{{ author['Name']['English'] }} <text class="h4">{{ author['Name']['NickName'] }}</text></div>
 
     {% if author['Name']['Others']['Pronunciation'] %}
-    <img class='m-1' width='180px' src="{{ static }}{{ author['Name']['Others']['Pronunciation'] }}">
+    <img class='m-1' width='180px' src="{{ static }}/{{ author['Name']['Others']['Pronunciation'] }}">
     {% endif %}
 
 

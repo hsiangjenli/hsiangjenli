@@ -3,7 +3,7 @@
 
 <tr>
     <td>
-        <img align="center" width='40px' src="static/{{ educations[edu]['University']['Logo'] }}">
+        <img align="center" width='40px' style='min-width: 40px' src="{{ static }}/{{ educations[edu]['University']['Logo'] }}">
     </td>
     <td>
         {{ educations[edu]['Year'] }}

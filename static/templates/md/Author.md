@@ -1,9 +1,10 @@
+<center>
 <div align="center">  
-<img width="150px" src="{{ static }}{{ author['Profile'] }}">
+<img width="150px" src="{{ static }}/{{ author['Profile'] }}">
 
-# **{{ author['Name']['English'] }}** <small><small><small><small> {{ author['Name']['NickName'] }} </small></small></small></small>
+# **{{ author['Name']['English'] }}** <small> {{ author['Name']['NickName'] }} </small>
 
-<img height="45px" src="{{ static }}{{ author['Name']['Others']['Pronunciation'] }}">
+<img height="45px" src="{{ static }}/{{ author['Name']['Others']['Pronunciation'] }}">
 
 <a href="mailto: {{ author['Mail'] }}">
     
@@ -11,3 +12,4 @@
 
 </a>
 </div>
+</center>

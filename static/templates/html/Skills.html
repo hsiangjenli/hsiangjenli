@@ -3,7 +3,7 @@
 {% block content %}
     {% for skill in skills %}
     <div class="row pt-3 pb-3 align-items-center">
-        <div class="col-1"><img class='edu-logo' src="{{ static }}{{ skills[skill]['Image'] }}"></div>
+        <div class="col-1"><img class='edu-logo' src="{{ static }}/{{ skills[skill]['Image'] }}"></div>
         <div class="col-11">
             <text class="h5 b">{{ skills[skill]['Title'] }}</text><br>
             <text class="h6">{{ skills[skill]['Description'] }}</text>
