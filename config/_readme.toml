@@ -61,20 +61,20 @@ Mail = 'hsiangjenli@gmail.com'
     Graduation = true
 
 [Award]
-  # [Award.2022_TABF_TBB_Fintech]
-  # Year = '2022'
-  # Name.Host = 'Taiwan Academy of Banking and Finance'
-  # Name.Others = '台灣金融研訓院-臺灣中小企業銀行-校園金融科技創意挑戰賽'
-  # Name.English = 'Campus Fintech Innovation Challenge'
-  # Ranking = '8/187'
-  # Cover = 'https://th.bing.com/th/id/R.499f30b79e79f1156a02f9745b516589?rik=aeCJCVY1AisOpA&pid=ImgRaw&r=0'
+  [Award.2022_TABF_TBB_Fintech]
+  Year = '2022'
+  Name.Host = 'Taiwan Academy of Banking and Finance'
+  Name.Others = '台灣金融研訓院-臺灣中小企業銀行-校園金融科技創意挑戰賽'
+  Name.English = 'Campus Fintech Innovation Challenge'
+  Ranking = 'Ranked as the 8th out of 187 teams'
+  Cover = 'https://th.bing.com/th/id/R.499f30b79e79f1156a02f9745b516589?rik=aeCJCVY1AisOpA&pid=ImgRaw&r=0'
 
   [Award.2022_NKUST_EE_AI]
   Year = '2022'
   Name.Host = 'National Kaohsiung University of Science and Technology - Electrical Engineering'
   Name.Others = '國立高雄科技大學-電機系-人工智慧暨類神經網路聯合專題展'
   Name.English = 'Joint Exhibition on Artificial Intelligence and Neural Networks'
-  Ranking = 1
+  Ranking = 'Ranked as the 1st out of an estimated 30 teams'
   Cover = 'https://user-images.githubusercontent.com/71996166/222050262-a19f4b61-0d9a-4149-b540-528e0e03f75f.png'
 
   [Award.2020_FintechSpace]

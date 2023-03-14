@@ -64,10 +64,21 @@
 
 
 <tr>
+    <td> <img width='40px' style='min-width: 40px' src="https://th.bing.com/th/id/R.499f30b79e79f1156a02f9745b516589?rik=aeCJCVY1AisOpA&pid=ImgRaw&r=0"> </td>
+    <td> 2022 </td>
+    <td> <b> Taiwan Academy of Banking and Finance </b><br>Campus Fintech Innovation Challenge </td>
+    <td> Ranked as the 8th out of 187 teams </td>
+
+</tr>
+
+
+
+
+<tr>
     <td> <img width='40px' style='min-width: 40px' src="https://user-images.githubusercontent.com/71996166/222050262-a19f4b61-0d9a-4149-b540-528e0e03f75f.png"> </td>
     <td> 2022 </td>
     <td> <b> National Kaohsiung University of Science and Technology - Electrical Engineering </b><br>Joint Exhibition on Artificial Intelligence and Neural Networks </td>
-    <td> 1 </td>
+    <td> Ranked as the 1st out of an estimated 30 teams </td>
 
 </tr>
 
