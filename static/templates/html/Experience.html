@@ -1,0 +1,14 @@
+{% extends "html/base/block.html" %}
+
+{% block content %}
+    {% for exp in experiences %}
+    <div class="row pt-2 pb-2 align-items-center">
+        <div class="col-1"><img class='edu-logo' src="{{ experiences[exp]['Company']['Logo'] }}"></div>
+        <div class="col-11">
+            <text class="h5 b">{{ experiences[exp]['Company']['Name'] }}</text><br>
+            <text class="h6">{{ experiences[exp]['Title'] }}</text><br>
+            <text class="text-black-50"><small>{{ experiences[exp]['Period'] }}</small></text>
+        </div>
+    </div>
+    {% endfor %}
+{% endblock %}

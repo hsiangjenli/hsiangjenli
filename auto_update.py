@@ -22,6 +22,7 @@ template_html = SetEnvironemnt(folder=['static/templates', 'static'], template='
 meta_data = {
     'static': 'https://hsiangjenli.github.io/hsiangjenli/static',
     'author':config['Author'],
+    'experiences':config['Experience'],
     'educations':config['Education'],
     'awards':config['Award'],
     'skills':config['Skills'],

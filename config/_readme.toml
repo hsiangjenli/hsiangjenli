@@ -7,6 +7,12 @@ Name.Others.Pronunciation = 'image/李享紝.svg'
 
 Profile = 'image/logo.svg'
 Mail = 'hsiangjenli@gmail.com'
+[Experience]
+  [Experience.2022_NKUST_CCET_TA]
+  Title = "Cross College Elite Tech Program - Data Science - Teaching assistant"
+  Period = "2022.09 - 2023.01"
+  Company.Name = "National Kaohsiung University of Science and Technology"
+  Company.Logo = "https://hsiangjenli.github.io/hsiangjenli/static/image/nkust.png"
 
 [Social_Media]
   [Social_Media.Github]
