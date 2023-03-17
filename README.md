@@ -45,7 +45,7 @@
         <b>National Kaohsiung University of Science and Technology</b>, Taiwan <br>
         Bachelor in Department of Money and Banking
     </td>
-    <td> </td>
+    <td></td>
 </tr>
 
 
