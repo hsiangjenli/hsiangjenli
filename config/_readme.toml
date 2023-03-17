@@ -62,7 +62,7 @@ Mail = 'hsiangjenli@gmail.com'
     University.Country = 'Taiwan'
     University.Logo = 'image/nkust.png'
     Major.Name = 'Department of Money and Banking'
-    Major.Others = ' '
+    Major.Others = ''
     Year = '2022'
     Graduation = true
 
