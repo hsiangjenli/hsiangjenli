@@ -92,6 +92,13 @@ Mail = 'hsiangjenli@gmail.com'
   Cover = 'https://www.fintechspace.com.tw/wp-content/uploads/2020/08/FinTechSpace-logo-%E5%BD%A9%E8%89%B2.png'
 
 [Personal_Project]
+  [Personal_Project.pystru]
+  Year = '2023'
+  Name = 'PyStru'
+  Tags = ['click', 'open-source', 'project-structure']
+  Documentation = 'https://hsiangjenli.github.io/pystru/'
+  Cover = 'https://hsiangjenli.github.io/pystru/static/image/cover.png'
+
   [Personal_Project.Rutens]
   Year = '2022'
   Name = 'Rutens'
