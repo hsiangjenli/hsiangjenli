@@ -109,6 +109,19 @@
 
 <tr>
 
+<td>2023</td>
+<td>PyStru</td>
+<td>
+
+`click` `open-source` `project-structure` 
+
+</td>
+<td> <a href="https://hsiangjenli.github.io/pystru/"> 🌐 </a> </td>
+
+</tr>
+
+<tr>
+
 <td>2022</td>
 <td>Rutens</td>
 <td>
