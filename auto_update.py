@@ -38,7 +38,7 @@ with open('README.md', 'w', encoding='utf-8') as f:
         )
     )
 
-with open('hsiangjenli.github.io/index.html', 'w', encoding='utf-8') as f:
+with open('index.html', 'w', encoding='utf-8') as f:
     f.write(
         template_html.render(
             **meta_data

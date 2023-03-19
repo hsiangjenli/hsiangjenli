@@ -137,3 +137,7 @@ a {
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
 }
+
+.more-info:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
