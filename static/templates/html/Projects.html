@@ -5,8 +5,8 @@
     <div class="col">
         <div class="card">
 
-            {% if projects[project]['Cover'] %}
-            <img src="{{ projects[project]['Cover'] }}" class="card-img-top">
+            {% if projects[project]['Image'] %}
+            <img src="{{ projects[project]['Image'] }}" class="card-img-top">
             {% else %}
             <img src="{{ static }}/image/error.svg" class="card-img-top">
             {% endif %}
@@ -41,8 +41,8 @@
                 
                 <div class="modal-body">
                     <p class="card-text">
-                        {% if projects[project]['Cover'] %}
-                        <img class="card-img-top" src="{{ projects[project]['Cover'] }}">
+                        {% if projects[project]['Image'] %}
+                        <img class="card-img-top" src="{{ projects[project]['Image'] }}">
                         {% else %}
                         <img class="card-img-top" src="{{ static }}/image/error.svg">
                         {% endif %}

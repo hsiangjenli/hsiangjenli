@@ -1,12 +1,25 @@
 {% extends "html/base/block.html" %}
 
 {% block content %}
+
+    <!-- <div class="row pt-2 pb-2 align-items-center">
+        <div class="col-1"><img class='edu-logo' src="{{ static }}/image/article.png"></div>
+        <div class="col-11">
+            <text class="h5 b">Sharing Programming Knowledge with Beginners</text><br>
+            <text class="h6">Authored {{ tutorial_repos_count }} tutorial articles or repository on various topics such as 
+                {% for repo in tutorial_repos_keywords %}
+                    {{ repo }}{% if not loop.last %}, {% endif %} 
+                {% endfor %}
+            </text><br>
+        </div>
+    </div> -->
+
     {% for exp in experiences %}
     <div class="row pt-2 pb-2 align-items-center">
-        <div class="col-1"><img class='edu-logo' src="{{ experiences[exp]['Company']['Logo'] }}"></div>
+        <div class="col-1"><img class='edu-logo' src="{{ experiences[exp]['Image'] }}"></div>
         <div class="col-11">
-            <text class="h5 b">{{ experiences[exp]['Company']['Name'] }}</text><br>
-            <text class="h6">{{ experiences[exp]['Title'] }}</text><br>
+            <text class="h5 b">{{ experiences[exp]['Title'] }}</text><br>
+            <text class="h6">{{ experiences[exp]['Description'] }}</text><br>
             <text class="text-black-50"><small>{{ experiences[exp]['Period'] }}</small></text>
         </div>
     </div>
