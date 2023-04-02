@@ -136,7 +136,7 @@
 <tr>
 
 <td>2022</td>
-<td>Apriori-J104-工作技能關聯性分析</td>
+<td>Apriori-J104</td>
 <td>
 
 `Web Scraping` `pyvis` `apyori` `ckip-transformers` 
@@ -149,7 +149,7 @@
 <tr>
 
 <td>2022</td>
-<td>NKUST-Django-Public-Opinion-Analysis-輿情分析網頁</td>
+<td>NKUST-Django-Public-Opinion-Analysis</td>
 <td>
 
 `Web Scraping` `Django` `MongoDB` `Bootstrap` `plotly.js` `Anue` `TWSE` 
@@ -162,7 +162,7 @@
 <tr>
 
 <td>2021</td>
-<td>TWSE-台灣證券交易所</td>
+<td>Crawler-TWSE</td>
 <td>
 
 `Web Scraping` `SQLite` `plotly` 
@@ -175,7 +175,7 @@
 <tr>
 
 <td>2021</td>
-<td>Anue-鉅亨網</td>
+<td>Crawler-Anue</td>
 <td>
 
 `Web Scraping` `MongoDB` 
@@ -188,7 +188,7 @@
 <tr>
 
 <td>2020</td>
-<td>LineBot-股票資訊查詢</td>
+<td>LineBot-Stock-info</td>
 <td>
 
 `Line-Bot` `Heroku` `mplfinance` `yfinance` 

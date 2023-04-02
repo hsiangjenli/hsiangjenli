@@ -98,6 +98,7 @@ Mail = 'hsiangjenli@gmail.com'
   Tags = ['click', 'open-source', 'project-structure']
   Documentation = 'https://hsiangjenli.github.io/pystru/'
   Cover = 'https://hsiangjenli.github.io/pystru/static/image/cover.png'
+  Description = 'PyStru is a command line tool that helps you to create a project structure.'
 
   [Personal_Project.Rutens]
   Year = '2022'
@@ -107,7 +108,7 @@ Mail = 'hsiangjenli@gmail.com'
 
   [Personal_Project.AprioriJ104]
   Year = '2022'
-  Name = 'Apriori-J104-工作技能關聯性分析'
+  Name = 'Apriori-J104'
   Tags = ['Web Scraping', 'pyvis', 'apyori', 'ckip-transformers']
   Documentation = 'https://hsiangjenli.gitlab.io/apriori-j104/README.html'
   Cover = 'https://i.imgur.com/bJS92RH.png'
@@ -121,28 +122,28 @@ Mail = 'hsiangjenli@gmail.com'
 
   [Personal_Project.DjangoPOA]
   Year = '2022'
-  Name = 'NKUST-Django-Public-Opinion-Analysis-輿情分析網頁'
+  Name = 'NKUST-Django-Public-Opinion-Analysis'
   Tags = ['Web Scraping', 'Django', 'MongoDB', 'Bootstrap', 'plotly.js', 'Anue', 'TWSE']
   Documentation = 'https://gitlab.com/hsiangjenli/NKUST-1102-Django-POA-Midterm-Project/-/wikis/home'
   Cover = ''
 
   [Personal_Project.TWSE]
   Year = '2021'
-  Name = 'TWSE-台灣證券交易所'
+  Name = 'Crawler-TWSE'
   Tags = ['Web Scraping', 'SQLite', 'plotly']
   Documentation = 'https://github.com/hsiangjenli/Web-Scraping-Challenge/tree/main/TWSE｜台灣證券交易所'
   Cover = ''
 
   [Personal_Project.Anue]
   Year = '2021'
-  Name = 'Anue-鉅亨網'
+  Name = 'Crawler-Anue'
   Tags = ['Web Scraping', 'MongoDB']
   Documentation = 'https://gitlab.com/tuxedo-web-scraping/anue'
   Cover = 'https://sfiles.cnyes.cool/fe-common/dd01f09f/76bfdbe59e3e432ffe6d5d203a37e64d.svg'
 
   [Personal_Project.LineBot]
   Year = '2020'
-  Name = 'LineBot-股票資訊查詢'
+  Name = 'LineBot-Stock-info'
   Tags = ['Line-Bot', 'Heroku', 'mplfinance', 'yfinance']
   Documentation = 'https://github.com/hsiangjenli/LineBot-STOCK.tw-Public'
   Cover = 'https://camo.githubusercontent.com/a171e8f00d35f451876bc4165e5c05a8453fc8bfa553d4df88530b5020ee175f/68747470733a2f2f692e696d6775722e636f6d2f444c524b5871372e706e67'
