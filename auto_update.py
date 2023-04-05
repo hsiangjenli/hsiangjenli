@@ -2,54 +2,32 @@
 import toml
 from jinja2 import Environment, FileSystemLoader
 import requests
-
-GITHUB_API = "https://api.github.com/"
-
-def get_github_user_repo(user):
-    url = GITHUB_API + "users/{}/repos".format(user)
-    response = requests.get(url)
-    if response.status_code == 200:
-        return response.json()
-    else:
-        return None
-
-
-def get_tutorial_repos(user):
-    repos = get_github_user_repo(user)
-    tutorial_repos = [repo['name'] for repo in repos if repo['name'].startswith('tutorial')]
-    return tutorial_repos, len(tutorial_repos)
-
-
-def get_repos_keywords(repos, n=5):
-    keywords = []
-    for repo in repos:
-        keywords.extend(repo.split('-'))
-
-    # remove tutorial in keywords
-    keywords = [keyword for keyword in keywords if keyword != 'tutorial']
-
-    # calculate keywords frequency
-    keywords_freq = {}
-    for keyword in keywords:
-        if keyword in keywords_freq:
-            keywords_freq[keyword] += 1
-        else:
-            keywords_freq[keyword] = 1
-    
-    # return top n keywords
-    keywords_freq = sorted(keywords_freq.items(), key=lambda x: x[1], reverse=True)
-    return [keyword[0] for keyword in keywords_freq[:n]]
-
+from core import GitHubRepos, CrawlerMyBlogPosts, CalculateKeywords
 
 def load_config(fname: str) -> dict:
     return toml.load(fname)
-
 
 def set_environemnt(folder: str, template: str):
     env = Environment(loader=FileSystemLoader(folder))
     template = env.get_template(template)
     return template
 
+def tutorial_info():
+    # Crawl my blog posts
+    crawler = CrawlerMyBlogPosts("https://github.com/hsiangjenli/blog/tree/main/source/_posts/tutorial")
+    posts, count_blogs = crawler.get_blog_posts_name()
+    
+    # Crawl my github repos
+    github = GitHubRepos("hsiangjenli")
+    repos, count_repos = github.get_tutorial_repos()
+
+    # Calculate keywords
+    cal = CalculateKeywords(posts, repos)
+    keywords = cal.get_keywords(n=3)
+
+    count = count_repos + count_blogs
+
+    return keywords, count
 
 # %% Load meta data and templates
 config = load_config(fname='config/_readme.toml')
@@ -57,15 +35,14 @@ config = load_config(fname='config/_readme.toml')
 template_md = set_environemnt(folder='static/templates', template='README.md')
 template_html = set_environemnt(folder=['static/templates', 'static'], template='index.html')
 
-tutorial_repos, tutorial_repos_count = get_tutorial_repos(user='hsiangjenli')
-tutorial_repos_keywords = get_repos_keywords(repos=tutorial_repos, n=3)
+tutorial_keywords, tutorial_counts = tutorial_info()
 
 # Update config['Experience']['Sharing_Programming_Knowledge']
 # Store the number of repos in which I've shared programming knowledge
 config['Experience']['Sharing_Programming_Knowledge']['Description'] = \
 config['Experience']['Sharing_Programming_Knowledge']['Description'].format(
-    tutorial_repos_count=tutorial_repos_count,
-    tutorial_repos_keywords=', '.join(tutorial_repos_keywords)
+    tutorial_repos_count=tutorial_counts,
+    tutorial_repos_keywords=', '.join(tutorial_keywords)
 )
 
 meta_data = {
@@ -78,8 +55,8 @@ meta_data = {
     'skills':config['Skills'],
     'projects':config['Personal_Project'],
     'social_links':config['Social_Media'],
-    'tutorial_repos_keywords':tutorial_repos_keywords,
-    'tutorial_repos_count':tutorial_repos_count,
+    'tutorial_repos_keywords':tutorial_keywords,
+    'tutorial_repos_count':tutorial_counts,
     'attributes': config['Attributes']
 }
 
@@ -91,7 +68,7 @@ with open('README.md', 'w', encoding='utf-8') as f:
         )
     )
 
-with open('hsiangjenli.github.io/index.html', 'w', encoding='utf-8') as f:
+with open('index.html', 'w', encoding='utf-8') as f:
     f.write(
         template_html.render(
             **meta_data

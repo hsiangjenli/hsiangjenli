@@ -7,12 +7,13 @@ Name.Others.Pronunciation = 'image/李享紝.svg'
 
 Profile = 'image/logo.svg'
 Mail = 'hsiangjenli@gmail.com'
+
 [Experience]
   [Experience.Sharing_Programming_Knowledge]
   Title = "Sharing Programming Knowledge with Beginners"
   Period = "2020 - now"
-  Description = "Authored {tutorial_repos_count} tutorial articles or repository on various topics such as {tutorial_repos_keywords}"
-  Image = "https://hsiangjenli.github.io/hsiangjenli/static/image/learning.png"
+  Description = "Authored {tutorial_repos_count} tutorial articles or repositories on various topics such as {tutorial_repos_keywords}"
+  Image = "https://hsiangjenli.github.io/hsiangjenli/static/image/creative.png"
 
   [Experience.2022_NKUST_CCET_TA]
   Title = "National Kaohsiung University of Science and Technology"
@@ -182,5 +183,5 @@ Mail = 'hsiangjenli@gmail.com'
 
 [Attributes]
   [Attributes.image_learning]
-  Image = 'image/learning.png'
+  Image = 'image/creative.png'
   Description = '<a href="https://www.flaticon.com/free-icons/learning" title="learning icons">Learning icons created by Amethyst prime - Flaticon</a>'
