@@ -23,7 +23,7 @@ def tutorial_info():
 
     # Calculate keywords
     cal = CalculateKeywords(posts, repos)
-    keywords = cal.get_keywords(n=3)
+    keywords = cal.get_keywords(n=4)
 
     count = count_repos + count_blogs
 
@@ -46,8 +46,8 @@ config['Experience']['Sharing_Programming_Knowledge']['Description'].format(
 )
 
 meta_data = {
-    'static': r'C:\Users\ASUS\Documents\Github\hsiangjenli\static',
-    # 'static': 'https://hsiangjenli.github.io/hsiangjenli/static',
+    # 'static': r'C:\Users\ASUS\Documents\Github\hsiangjenli\static',
+    'static': 'https://hsiangjenli.github.io/hsiangjenli/static',
     'author':config['Author'],
     'experiences':config['Experience'],
     'educations':config['Education'],
@@ -68,7 +68,7 @@ with open('README.md', 'w', encoding='utf-8') as f:
         )
     )
 
-with open('index.html', 'w', encoding='utf-8') as f:
+with open('hsiangjenli.github.io/index.html', 'w', encoding='utf-8') as f:
     f.write(
         template_html.render(
             **meta_data

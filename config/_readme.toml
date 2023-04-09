@@ -105,7 +105,7 @@ Mail = 'hsiangjenli@gmail.com'
   Tags = ['click', 'open-source', 'project-structure']
   Documentation = 'https://hsiangjenli.github.io/pystru/'
   Image = 'https://hsiangjenli.github.io/pystru/static/image/cover.png'
-  Description = 'PyStru is a command line tool that helps you to create a project structure.'
+  Description = 'PyStru is a package I created to simplify the process of setting up a new Python project. It includes features such as creating static websites, generating README files, and generating gitignore files, all with the goal of making the process faster and less repetitive.'
 
   [Personal_Project.Rutens]
   Year = '2022'
