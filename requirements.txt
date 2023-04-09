@@ -1,4 +1,8 @@
 jinja2
 toml
+<<<<<<< HEAD
 requests
 beautifulsoup4
+=======
+requests
+>>>>>>> main
