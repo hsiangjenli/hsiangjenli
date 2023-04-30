@@ -68,7 +68,12 @@ with open('README.md', 'w', encoding='utf-8') as f:
         )
     )
 
-with open('hsiangjenli.github.io/index.html', 'w', encoding='utf-8') as f:
+if meta_data['static'].startswith("https://"):
+    output_path = 'hsiangjenli.github.io/index.html'
+else:
+    output_path = 'test.html'
+
+with open(output_path, 'w', encoding='utf-8') as f:
     f.write(
         template_html.render(
             **meta_data

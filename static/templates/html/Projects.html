@@ -8,7 +8,7 @@
             {% if projects[project]['Image'] %}
             <img src="{{ projects[project]['Image'] }}" class="card-img-top">
             {% else %}
-            <img src="{{ static }}/image/error.svg" class="card-img-top">
+            <img src="{{ static }}/image/rocket.svg" class="card-img-top">
             {% endif %}
 
             <div class="card-body">
@@ -44,7 +44,7 @@
                         {% if projects[project]['Image'] %}
                         <img class="card-img-top" src="{{ projects[project]['Image'] }}">
                         {% else %}
-                        <img class="card-img-top" src="{{ static }}/image/error.svg">
+                        <img class="card-img-top" src="{{ static }}/image/rocket.svg">
                         {% endif %}
                         {{ projects[project]['Description'] }}
                     </p>

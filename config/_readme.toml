@@ -9,6 +9,12 @@ Profile = 'image/logo.svg'
 Mail = 'hsiangjenli@gmail.com'
 
 [Experience]
+  [Experience.NTUST_SIMSLAB]
+  Title = "System Informatics and Management Science - SiMS Lab"
+  Period = "2022.09 - now"
+  Description = "Master student in SiMS Lab, NTUST"
+  Image = "https://hsiangjenli.github.io/hsiangjenli/static/image/simslab.svg"
+  
   [Experience.Sharing_Programming_Knowledge]
   Title = "Sharing Programming Knowledge with Beginners"
   Period = "2020 - now"
@@ -168,8 +174,8 @@ Mail = 'hsiangjenli@gmail.com'
 
   [Skills.Database]
   Title = 'Database'
-  Description = 'Basic operations'
-  Image = 'image/mysql.svg'
+  Description = 'Basic operations. MySQL, SQLite, MongoDB'
+  Image = 'image/database.png'
 
   [Skills.Ubuntu]
   Title = 'Ubuntu'
@@ -181,7 +187,16 @@ Mail = 'hsiangjenli@gmail.com'
   Description = 'I am proficient in using GitHub Workflow for automated deployment, and I am familiar with the basics of Git.'
   Image = 'image/git.svg'
 
+  [Skills.golang]
+  Title = 'Golang'
+  Description = 'I am currently learning Golang and helping to translate <a class="b" href="https://github.com/hsiangjenli/learngo">tutorial examples</a> for Golang on GitHub.'
+  Image = 'image/golang.svg'
+
 [Attributes]
   [Attributes.image_learning]
   Image = 'image/creative.png'
   Description = '<a href="https://www.flaticon.com/free-icons/learning" title="learning icons">Learning icons created by Amethyst prime - Flaticon</a>'
+  
+  [Attributes.image_database]
+  Image = 'image/database.png'
+  Description = '<a href="https://www.flaticon.com/free-icons/server" title="server icons">Server icons created by Freepik - Flaticon</a>'

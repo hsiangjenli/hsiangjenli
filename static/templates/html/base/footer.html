@@ -6,7 +6,7 @@
 
     {% for attr in attributes %}
 
-        {{ attributes[attr]['Description'] }}
+        {{ attributes[attr]['Description'] }}{% if not loop.last %}｜{% endif %} 
 
     {% endfor %}
 
