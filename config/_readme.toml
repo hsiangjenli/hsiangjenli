@@ -13,7 +13,7 @@ Mail = 'hsiangjenli@gmail.com'
   Title = "System Informatics and Management Science - SiMS Lab"
   Period = "2022.09 - now"
   Description = "Master student in SiMS Lab, NTUST"
-  Image = "https://hsiangjenli.github.io/hsiangjenli/static/image/simslab.svg"
+  Image = "https://hsiangjenli.github.io/hsiangjenli/static/image/ntust-simslab.svg"
   
   [Experience.Sharing_Programming_Knowledge]
   Title = "Sharing Programming Knowledge with Beginners"
