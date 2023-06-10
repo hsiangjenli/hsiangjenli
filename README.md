@@ -27,7 +27,7 @@
     </td>
     <td>
         <b>National Taiwan University of Science and Technology</b>, Taiwan <br>
-        Master in Department of Industrial Management
+        Master in Computer Science and Information Engineering
     </td>
     <td>Big data analytics and information security</td>
 </tr>
@@ -123,7 +123,7 @@
 <tr>
 
 <td>2022</td>
-<td>Rutens</td>
+<td>Taiwan Famous E-commerce</td>
 <td>
 
 `SQLite` `CKIP-transformer` `Regular-Expression` `POS-tagging` `dimension-reduction` `cluster` 
