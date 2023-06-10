@@ -64,7 +64,7 @@ Mail = 'hsiangjenli@gmail.com'
     University.Others = '國立臺灣科技大學'
     University.Country = 'Taiwan'
     University.Logo = 'image/ntust.png'
-    Major.Name = 'Department of Industrial Management'
+    Major.Name = 'Computer Science and Information Engineering'
     Major.Others = 'Big data analytics and information security'
     Year = '2024'
     Graduation = false
@@ -113,9 +113,9 @@ Mail = 'hsiangjenli@gmail.com'
   Image = 'https://hsiangjenli.github.io/pystru/static/image/cover.png'
   Description = 'PyStru is a package I created to simplify the process of setting up a new Python project. It includes features such as creating static websites, generating README files, and generating gitignore files, all with the goal of making the process faster and less repetitive.'
 
-  [Personal_Project.Rutens]
+  [Personal_Project.tw_famous_ecommerce]
   Year = '2022'
-  Name = 'Rutens'
+  Name = 'Taiwan Famous E-commerce'
   Tags = ['SQLite', 'CKIP-transformer', 'Regular-Expression', 'POS-tagging', 'dimension-reduction', 'cluster']
   Image = ''
 
