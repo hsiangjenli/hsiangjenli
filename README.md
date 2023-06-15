@@ -27,7 +27,7 @@
     </td>
     <td>
         <b>National Taiwan University of Science and Technology</b>, Taiwan <br>
-        Master in Computer Science and Information Engineering
+        Master in Department of Computer Science and Information Engineering
     </td>
     <td>Big data analytics and information security</td>
 </tr>
@@ -105,6 +105,19 @@
     <td><b>Name</b></td>
     <td><b>Tags</b></td>
     <td><b>Documentation</b></td>
+</tr>
+
+<tr>
+
+<td>2023</td>
+<td>Graph-based : Keywords Recommendation System</td>
+<td>
+
+`Graph Theory` `Network` `CKIP-transformer` `Regular-Expression` `POS-tagging` `Fast API` 
+
+</td>
+<td></td>
+
 </tr>
 
 <tr>
