@@ -3,6 +3,7 @@ import toml
 from jinja2 import Environment, FileSystemLoader
 import requests
 from core import GitHubRepos, CrawlerMyBlogPosts, CalculateKeywords
+from core.static_url import is_abs_url
 
 def load_config(fname: str) -> dict:
     return toml.load(fname)
@@ -30,7 +31,12 @@ def tutorial_info():
     return keywords, count
 
 # %% Load meta data and templates
-config = load_config(fname='config/_readme.toml')
+author = load_config(fname='config/_author.toml')
+edcations = load_config(fname='config/_education.toml')
+experiences = load_config(fname='config/_experience.toml')
+competitions = load_config(fname='config/_award.toml')
+skills = load_config(fname='config/_skill.toml')
+projects = load_config(fname='config/_project.toml')
 
 template_md = set_environemnt(folder='static/templates', template='README.md')
 template_html = set_environemnt(folder=['static/templates', 'static'], template='index.html')
@@ -39,31 +45,30 @@ tutorial_keywords, tutorial_counts = tutorial_info()
 
 # Update config['Experience']['Sharing_Programming_Knowledge']
 # Store the number of repos in which I've shared programming knowledge
-config['Experience']['Sharing_Programming_Knowledge']['Description'] = \
-config['Experience']['Sharing_Programming_Knowledge']['Description'].format(
+experiences['sharing_programming_knowledge']['english']['description'] = \
+experiences['sharing_programming_knowledge']['english']['description'].format(
     tutorial_repos_count=tutorial_counts,
     tutorial_repos_keywords=', '.join(tutorial_keywords)
 )
 
 meta_data = {
-    # 'static': r'C:\Users\ASUS\Documents\Github\hsiangjenli\static',
-    'static': 'https://hsiangjenli.github.io/hsiangjenli/static',
-    'author':config['Author'],
-    'experiences':config['Experience'],
-    'educations':config['Education'],
-    'awards':config['Award'],
-    'skills':config['Skills'],
-    'projects':config['Personal_Project'],
-    'social_links':config['Social_Media'],
-    'tutorial_repos_keywords':tutorial_keywords,
-    'tutorial_repos_count':tutorial_counts,
-    'attributes': config['Attributes']
+    'static': r'C:\Users\ASUS\Documents\Github\hsiangjenli\static',
+    # 'static': 'https://hsiangjenli.github.io/hsiangjenli/static',
+    'language': 'english',
+    'author':author,
+    "social_links": author['social_media'],
+    'educations': edcations,
+    'experiences': experiences,
+    'awards': competitions,
+    'skills': skills,
+    'projects': projects,
 }
 
 # %% Output
 with open('README.md', 'w', encoding='utf-8') as f:
     f.write(
         template_md.render(
+            is_abs_url=is_abs_url,
             **meta_data
         )
     )
@@ -76,6 +81,7 @@ else:
 with open(output_path, 'w', encoding='utf-8') as f:
     f.write(
         template_html.render(
+            is_abs_url=is_abs_url,
             **meta_data
         )
 
