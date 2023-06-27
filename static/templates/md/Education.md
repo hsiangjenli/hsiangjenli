@@ -1,18 +1,18 @@
 <table>
 {% for edu in educations %}
-
+    {% set edu_logo = is_abs_url( educations[edu]['university']['basic_info']['image'], static ) %}
 <tr>
     <td>
-        <img align="center" width='40px' style='min-width: 40px' src="{{ static }}/{{ educations[edu]['University']['Logo'] }}">
+        <img align="center" width='40px' style='min-width: 40px' src="{{ edu_logo }}">
     </td>
     <td>
-        {{ educations[edu]['Year'] }}
+        {{ educations[edu]['university']['basic_info']['graduate_year'] }}
     </td>
     <td>
-        <b>{{ educations[edu]['University']['Name'] }}</b>, {{ educations[edu]['University']['Country'] }} <br>
-        {{ edu }} in {{ educations[edu]['Major']['Name'] }}
+        <b>{{ educations[edu]['university'][language]['name'] }}</b>, {{ educations[edu]['university'][language]['country'] }} <br>
+        {{ edu }} in {{ educations[edu]['university'][language]['major'] }}
     </td>
-    <td>{{ educations[edu]['Major']['Others'] }}</td>
+    <td>{{ educations[edu]['university'][language]['description'] }}</td>
 </tr>
 
 {% endfor %}
