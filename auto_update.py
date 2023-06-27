@@ -52,8 +52,8 @@ experiences['sharing_programming_knowledge']['english']['description'].format(
 )
 
 meta_data = {
-    'static': r'C:\Users\ASUS\Documents\Github\hsiangjenli\static',
-    # 'static': 'https://hsiangjenli.github.io/hsiangjenli/static',
+    # 'static': r'C:\Users\ASUS\Documents\Github\hsiangjenli\static',
+    'static': 'https://hsiangjenli.github.io/hsiangjenli/static',
     'language': 'english',
     'author':author,
     "social_links": author['social_media'],
