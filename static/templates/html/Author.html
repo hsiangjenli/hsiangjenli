@@ -1,20 +1,22 @@
-<img class="character center" src="{{ static }}/{{ author['Profile'] }}" />
+
+{% set author_profile = is_abs_url( author['profile'], static ) %}
+{% set author_name_pronunciation = is_abs_url( author['name']['others']['chinese']['pronunciation'], static ) %}
+
+
+<img class="character center" src="{{ author_profile }}">
 
 <div class="center pt-5 pb-3">
-    <div class="h1 b">{{ author['Name']['English'] }} <text class="h4">{{ author['Name']['NickName'] }}</text></div>
-
-    {% if author['Name']['Others']['Pronunciation'] %}
-    <img class='m-1' width='180px' src="{{ static }}/{{ author['Name']['Others']['Pronunciation'] }}">
-    {% endif %}
-
-
+    <div class="h1 b">{{ author['name']['english'] }} <text class="h4">{{ author['name']['nick_name'] }}</text></div>
+    <img class='m-1' width='180px' src="{{ author_name_pronunciation }}">
+  
     <div class="row justify-content-center m-3">
 
-        {% for social_link in social_links %}
+        {% for sl in social_links %}
+            {% set social_link = is_abs_url( social_links[sl]['url'], static ) %}
             <span class="social-badge">
-                <a href="{{ social_links[social_link]['Home'] }}">
-                    <i class="{{ social_links[social_link]['Font_Awesome'] }} social-badge"
-                        style="background-color: {{ social_links[social_link]['BG_Color'] }}; color: white;"></i>
+                <a href="{{ social_link }}">
+                    <i class="{{ social_links[sl]['font_awesome'] }} social-badge"
+                       style="background-color: {{ social_links[sl]['bg_color'] }}; color: white;"></i>
                 </a>
             </span>
         {% endfor %}

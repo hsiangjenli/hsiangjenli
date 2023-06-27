@@ -2,27 +2,23 @@
 <div class="row row-cols-1 row-cols-md-3 g-4">
 
     {% for project in projects %}
+        {% set project_image = is_abs_url( projects[project]['basic_info']['image'], static ) %}
     <div class="col">
         <div class="card">
-
-            {% if projects[project]['Image'] %}
-            <img src="{{ projects[project]['Image'] }}" class="card-img-top">
-            {% else %}
-            <img src="{{ static }}/image/rocket.svg" class="card-img-top">
-            {% endif %}
-
+            <img src="{{ project_image }}" class="card-img-top">
             <div class="card-body">
-                <h5 class="card-title b h6 more-info" data-bs-toggle="modal" data-bs-target="#Modal-{{ projects[project]['Name'] }}">{{ projects[project]['Name'] }}</h5>
+                <h5 class="card-title b h6 more-info" data-bs-toggle="modal" data-bs-target="#Modal-{{ project }}">{{ projects[project][language]['project_name'] }}</h5>
 
-                <text class="text-black-50"><small>{{ projects[project]['Year'] }}</small></text>
+                <text class="text-black-50"><small><small>{{ projects[project]['basic_info']['period_start'] }} ~ {{ projects[project]['basic_info']['period_end'] }}</small></small></text>
 
                 <p class="card-text">
-                    {% for tag in projects[project]['Tags'] %}
+                    {% for tag in projects[project]['basic_info']['tags'] %}
                     <span class="badge rounded-pill bg-secondary mt-1">{{ tag }}</span>
                     {% endfor %}
                 </p>
 
-                {% if projects[project]['Documentation'] %} <a href="{{ projects[project]['Documentation'] }}"> 🌐 </a>
+                {% if projects[project]['basic_info']['external_link'] %}
+                    <a href="{{ projects[project]['basic_info']['external_link'] }}"> 🌐 </a>
                 {% endif %}
 
             </div>
@@ -30,28 +26,25 @@
         </div>
     </div>
 
-    <div class="modal fade" id="Modal-{{ projects[project]['Name'] }}">
-        <div class="modal-dialog modal-dialog-centered">
+    <div class="modal fade" id="Modal-{{ project }}">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">{{ projects[project]['Name'] }}</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">{{ projects[project][language]['project_name'] }}</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 
                 <div class="modal-body">
                     <p class="card-text">
-                        {% if projects[project]['Image'] %}
-                        <img class="card-img-top" src="{{ projects[project]['Image'] }}">
-                        {% else %}
-                        <img class="card-img-top" src="{{ static }}/image/rocket.svg">
-                        {% endif %}
-                        {{ projects[project]['Description'] }}
+                       
+                        <img class="card-img-top" src="{{ project_image }}">
+                        {{ projects[project][language]['project_description'] }}
                     </p>
                 </div>
                 
                 <div class="p-3">
-                    {% for tag in projects[project]['Tags'] %}
+                    {% for tag in projects[project]['basic_info']['tags'] %}
                     <span class="badge rounded-pill bg-secondary mt-1">{{ tag }}</span>
                     {% endfor %}
                 </div>

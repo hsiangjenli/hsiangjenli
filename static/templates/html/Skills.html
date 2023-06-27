@@ -1,13 +1,18 @@
 {% extends "html/base/block.html" %}
 
 {% block content %}
-    {% for skill in skills %}
     <div class="row pt-3 pb-3 align-items-center">
-        <div class="col-1"><img class='edu-logo' src="{{ static }}/{{ skills[skill]['Image'] }}"></div>
-        <div class="col-11">
-            <text class="h5 b">{{ skills[skill]['Title'] }}</text><br>
-            <text class="h6">{{ skills[skill]['Description'] }}</text>
+    {% for skill in skills %}
+        <div class="row mb-1 mt-1">
+            <div class="col-2"><text class="h5 b">{{ skill }}</text></div>
+            <div class="col-9">
+            
+                {% for s in skills[skill] %}
+                    <!-- {{ skills[skill][s][language]['name'] }} -->
+                    {{ skills[skill][s][language]['name'] }}{% if not loop.last %}, {% endif %} 
+                {% endfor %}
+            </div>
         </div>
-    </div>
     {% endfor %}
+    </div>
 {% endblock %}
