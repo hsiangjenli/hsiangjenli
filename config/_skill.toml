@@ -1,0 +1,187 @@
+[language]
+    [language.python]
+        [language.python.basic_info]
+        level = "Advanced"
+        image = "..."
+
+        [language.python.english]
+        name = "Python"
+        description = "..."
+
+        [language.python.chinese]
+        name = "Python"
+        description = "..."
+
+
+    [language.sql]
+        [language.sql.basic_info]
+        level = "Beginner"
+        image = "..."
+
+        [language.sql.english]
+        name = "SQL"
+        description = "..."
+
+        [language.sql.chinese]
+        name = "SQL"
+        description = "..."
+
+
+[website]
+    [website.django]
+        [website.django.basic_info]
+        level = "Intermediate"
+        image = "..."
+
+        [website.django.english]
+        name = "Django"
+        description = "..."
+
+        [website.django.chinese]
+        name = "Django"
+        description = "..."
+
+
+    [website.fastapi]
+        [website.fastapi.basic_info]
+        level = "Beginner"
+        image = "..."
+
+        [website.fastapi.english]
+        name = "FastAPI"
+        description = "..."
+
+        [website.fastapi.chinese]
+        name = "FastAPI"
+        description = "..."
+
+
+    [website.html]
+        [website.html.basic_info]
+        level = "Intermediate"
+        image = "..."
+
+        [website.html.english]
+        name = "HTML"
+        description = "..."
+
+        [website.html.chinese]
+        name = "HTML"
+        description = "..."
+
+
+    [website.css_scss]
+        [website.css_scss.basic_info]
+        level = "Intermediate"
+        image = "..."
+
+        [website.css_scss.english]
+        name = "CSS/SCSS"
+        description = "..."
+
+        [website.css_scss.chinese]
+        name = "CSS/SCSS"
+        description = "..."
+
+
+    [website.bootstrap]
+        [website.bootstrap.basic_info]
+        level = "Intermediate"
+        image = "..."
+
+        [website.bootstrap.english]
+        name = "Bootstrap"
+        description = "..."
+
+        [website.bootstrap.chinese]
+        name = "Bootstrap"
+        description = "..."
+
+
+[tool]
+    [tool.git]
+        [tool.git.basic_info]
+        level = "Intermediate"
+        image = "..."
+
+        [tool.git.english]
+        name = "Git"
+        description = "..."
+
+        [tool.git.chinese]
+        name = "Git"
+        description = "..."
+    
+
+    [tool.docker]
+        [tool.docker.basic_info]
+        level = "Intermediate"
+        image = "..."
+
+        [tool.docker.english]
+        name = "Docker"
+        description = "..."
+
+        [tool.docker.chinese]
+        name = "Docker"
+        description = "..."
+
+
+    # [tool.spark]
+    #     [tool.spark.basic_info]
+    #     level = "Ongoing"
+    #     image = "..."
+
+    #     [tool.spark.english]
+    #     name = "Spark"
+    #     description = "..."
+
+    #     [tool.spark.chinese]
+    #     name = "Spark"
+    #     description = "..."
+    
+
+    # [tool.hadoop]
+    #     [tool.hadoop.basic_info]
+    #     level = "Ongoing"
+    #     image = "..."
+
+    #     [tool.hadoop.english]
+    #     name = "Hadoop"
+    #     description = "..."
+
+    #     [tool.hadoop.chinese]
+    #     name = "Hadoop"
+    #     description = "..."
+
+
+[platform]
+    [platform.ubuntu]
+        [platform.ubuntu.basic_info]
+        level = "Intermediate"
+        image = "..."
+
+        [platform.ubuntu.english]
+        name = "Ubuntu"
+        description = "..."
+
+        [platform.ubuntu.chinese]
+        name = "Ubuntu"
+        description = "..."
+    
+
+    [platform.windows]
+        [platform.windows.basic_info]
+        level = "Intermediate"
+        image = "..."
+
+        [platform.windows.english]
+        name = "Windows"
+        description = "..."
+
+        [platform.windows.chinese]
+        name = "Windows"
+        description = "..."
+
+
+# [research_interest]
