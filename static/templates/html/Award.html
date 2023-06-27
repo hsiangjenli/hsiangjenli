@@ -3,11 +3,12 @@
 {% block content %}
     {% for award in awards %}
     <div class="row pt-2 pb-2 align-items-center">
-        <div class="col-1"><img class='edu-logo' src="{{ awards[award]['Image'] }}"></div>
+        {% set award_image = is_abs_url( awards[award]['basic_info']['image'], static ) %}
+        <div class="col-1"><img class='edu-logo' src="{{ award_image }}"></div>
         <div class="col-11">
-            <text class="h5 b">{{ awards[award]['Name']['Host'] }}</text><br>
-            <text class="">{{ awards[award]['Year'] }} - {{ awards[award]['Name']['English'] }}</text><br>
-            <text class="text-black-50"><small>{{ awards[award]['Ranking'] }}</small></text>
+            <text class="h5 b">{{ awards[award][language]['host'] }}</text><br>
+            <text class="">{{ awards[award]['basic_info']['year'] }} - {{ awards[award][language]['title'] }}</text><br>
+            <text class="text-black-50"><small>{{ awards[award][language]['ranking'] }}</small></text>
         </div>
     </div>
     {% endfor %}
