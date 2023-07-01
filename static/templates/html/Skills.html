@@ -6,9 +6,11 @@
         <div class="row mb-1 mt-1">
             <div class="col-sm-2"><text class="h5 b">{{ skill }}</text></div>
             <div class="col-sm-9">
+                
                 {% for s in skills[skill] %}
                     {{ skills[skill][s][language]['name'] }}{% if not loop.last %}, {% endif %} 
                 {% endfor %}
+
             </div>
         </div>
     {% endfor %}
