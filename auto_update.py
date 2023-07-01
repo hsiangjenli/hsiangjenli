@@ -31,6 +31,7 @@ def tutorial_info():
     return keywords, count
 
 # %% Load meta data and templates
+attributes = load_config(fname='config/_readme.toml')['Attributes']
 author = load_config(fname='config/_author.toml')
 edcations = load_config(fname='config/_education.toml')
 experiences = load_config(fname='config/_experience.toml')
@@ -62,6 +63,7 @@ meta_data = {
     'awards': competitions,
     'skills': skills,
     'projects': projects,
+    'attributes': attributes,
 }
 
 # %% Output
