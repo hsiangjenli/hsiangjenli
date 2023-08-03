@@ -21,7 +21,7 @@
         <div class="col-11">
             <text class="h5 b">{{ experiences[exp][language]['title'] }}</text><br>
             <text class="h6">{{ experiences[exp][language]['description'] }}</text><br>
-            <text class="text-black-50"><small>{{ experiences[exp]['basic_info']['period_start'] }}</small></text>
+            <text class="text-black-50"><small>{{ experiences[exp]['basic_info']['period_start'] }} ~ {{ experiences[exp]['basic_info']['period_end'] }}</small></text>
         </div>
     </div>
     {% endfor %}

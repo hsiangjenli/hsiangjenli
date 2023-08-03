@@ -8,7 +8,11 @@
 <div class="center pt-5 pb-3">
     <div class="h1 b">{{ author['name']['english'] }} <text class="h4">{{ author['name']['nick_name'] }}</text></div>
     <img class='m-1' width='180px' src="{{ author_name_pronunciation }}">
-  
+    
+    <div class="b p-2">
+        <a href="mailto:{{ author['mail'] }}">{{ author['mail'] }}</a>
+    </div>
+
     <div class="row justify-content-center m-3">
 
         {% for sl in social_links %}

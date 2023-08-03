@@ -56,7 +56,7 @@ meta_data = {
     # 'static': r'C:\Users\ASUS\Documents\Github\hsiangjenli\static',
     'static': 'https://hsiangjenli.github.io/hsiangjenli/static',
     'language': 'english',
-    'author':author,
+    'author': author,
     "social_links": author['social_media'],
     'educations': edcations,
     'experiences': experiences,

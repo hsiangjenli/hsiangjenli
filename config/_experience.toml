@@ -1,3 +1,16 @@
+[scsb_digital_banking]
+    [scsb_digital_banking.basic_info]
+    period_start = "2023.07"
+    period_end = "2023.08"
+    image = "image/scsb.png"
+    [scsb_digital_banking.english]
+    title = "SCSB Digital Banking"
+    description = "Internship in SCSB Digital Banking"
+
+    [scsb_digital_banking.chinese]
+    title = "上海商業儲蓄銀行"
+    description = "數位銀行部實習生"
+
 [ntust_simslab]
     [ntust_simslab.basic_info]
     period_start = "2022.09"
