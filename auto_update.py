@@ -67,13 +67,13 @@ meta_data = {
 }
 
 # %% Output
-with open('README.md', 'w', encoding='utf-8') as f:
-    f.write(
-        template_md.render(
-            is_abs_url=is_abs_url,
-            **meta_data
-        )
-    )
+# with open('README.md', 'w', encoding='utf-8') as f:
+#     f.write(
+#         template_md.render(
+#             is_abs_url=is_abs_url,
+#             **meta_data
+#         )
+#     )
 
 if meta_data['static'].startswith("https://"):
     output_path = 'hsiangjenli.github.io/index.html'
