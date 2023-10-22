@@ -1,0 +1,14 @@
+{% extends "html/base/block.html" %}
+
+{% block content %}
+
+<div class="row mb-1 mt-1">
+    <div class="col-sm-2"><text class="h5 b">Data Science</text></div>
+    <div class="col-sm-9">
+        {% for research in researchs %}
+            {{ research }} {% if not loop.last %}, {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

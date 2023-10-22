@@ -38,6 +38,7 @@ experiences = load_config(fname='config/_experience.toml')
 competitions = load_config(fname='config/_award.toml')
 skills = load_config(fname='config/_skill.toml')
 projects = load_config(fname='config/_project.toml')
+researchs = load_config(fname='config/_research.toml')
 
 template_md = set_environemnt(folder='static/templates', template='README.md')
 template_html = set_environemnt(folder=['static/templates', 'static'], template='index.html')
@@ -64,6 +65,7 @@ meta_data = {
     'skills': skills,
     'projects': projects,
     'attributes': attributes,
+    'researchs': researchs["research_interests"],
 }
 
 # %% Output
