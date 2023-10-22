@@ -29,7 +29,7 @@ jobs:
       run: |
         git submodule deinit -f hsiangjenli.github.io
         git submodule update --init --recursive
-        git pull --recurse-submodules main
+        git pull main --recurse-submodules 
         git submodule update --remote --recursive
         
     - name: Set up Python
