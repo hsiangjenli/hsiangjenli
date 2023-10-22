@@ -28,9 +28,9 @@ jobs:
     - name: Git Submodule Update
       run: |
         git submodule deinit -f hsiangjenli.github.io
-        git submodule update --init --recursive
+        git submodule update --init --recursive --remote=main
         git pull --recurse-submodules 
-        git submodule update --remote --recursive
+        git submodule update --remote --recursive --remote=main
         
     - name: Set up Python
       uses: actions/setup-python@v4
