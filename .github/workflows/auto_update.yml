@@ -1,64 +1,59 @@
 name: 'Submodules Sync'
 
 on:
-  # Allows you to run this workflow manually from the Actions tab or through HTTP API
-  push:
-    branches: [main]
+ # Allows you to run this workflow manually from the Actions tab or through HTTP API
+ push:
+  branches: [main]
 
 jobs:
-  sync:
-    name: 'Submodules Sync'
-    runs-on: ubuntu-latest
+ sync:
+  name: 'Submodules Sync'
+  runs-on: ubuntu-latest
 
-    # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
-    defaults:
-      run:
-        shell: bash
+  # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
+  defaults:
+   run:
+    shell: bash
 
-    steps:
-    # Checkout the repository to the GitHub Actions runner
-    - name: Checkout
-      uses: actions/checkout@v2
-      with:
-        ref: main  # 指定要检出的分支或标签
-        token: ${{ secrets.ACCESS_TOKEN }}
-        submodules: true
+  steps:
+  # Checkout the repository to the GitHub Actions runner
+  - name: Checkout
+   uses: actions/checkout@v2
+   with:
+    ref: main # 指定要检出的分支或标签
+    token: ${{ secrets.ACCESS_TOKEN }}
+    submodules: true
 
-    # Update references
-    - name: Git Submodule Update
-      run: |
-        git submodule deinit -f hsiangjenli.github.io
-        git submodule update --init --recursive
-        git pull --recurse-submodules 
-        git submodule update --remote --recursive
-        
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: 3.9
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-    
-    - name: auto update
-      run: |
-        python auto_update.py
+  # Update references
+  - name: Git Submodule Update
+   run: |
+    git submodule deinit -f hsiangjenli.github.io
+    git submodule update --init --recursive --remote
 
+  - name: Set up Python
+   uses: actions/setup-python@v4
+   with:
+    python-version: 3.9
+  - name: Install dependencies
+   run: |
+    python -m pip install --upgrade pip
+    pip install -r requirements.txt
+   
+  - name: auto update
+   run: |
+    python auto_update.py
 
+  - name: Commit update
+   run: |
+    git config --global user.name 'Git bot'
+    git config --global user.email 'bot@noreply.github.com'
+    git remote set-url origin https://x-access-token:${{ secrets.ACCESS_TOKEN }}@github.com/${{ github.repository }}
+    git commit -am "auto: updated by github workflow" && git push || echo "No changes to commit"
 
-
-    - name: Commit update
-      run: |
-        git config --global user.name 'Git bot'
-        git config --global user.email 'bot@noreply.github.com'
-        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-        git commit -am "auto: updated by github workflow" && git push || echo "No changes to commit"
-
-        cd hsiangjenli.github.io
-        git config --global user.name 'Git bot'
-        git config --global user.email 'bot@noreply.github.com'
-        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.github.io
-        git add .
-        git checkout main
-        git commit -am "auto: updated by github workflow" && git push origin main|| echo "No changes to commit"
+    cd hsiangjenli.github.io
+    git config --global user.name 'Git bot'
+    git config --global user.email 'bot@noreply.github.com'
+    git remote set-url origin https://x-access-token:${{ secrets.ACCESS_TOKEN }}@github.com/${{ github.repository }}.github.io
+    git add .
+    git checkout main
+    git commit -am "auto: updated by github workflow" && git push origin main|| echo "No changes to commit"
