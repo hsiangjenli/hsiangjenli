@@ -25,11 +25,11 @@ jobs:
         submodules: true
 
     # Update references
-    - name: Git Sumbodule Update
+    - name: Git Submodule Update
       run: |
         git submodule deinit -f hsiangjenli.github.io
         git submodule update --init --recursive
-        git pull --recurse-submodules
+        git pull --recurse-submodules main
         git submodule update --remote --recursive
         
     - name: Set up Python
