@@ -5,6 +5,13 @@ import requests
 from core import GitHubRepos, CrawlerMyBlogPosts, CalculateKeywords
 from core.static_url import is_abs_url
 
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--static', type=str, default='https://hsiangjenli.github.io/hsiangjenli/static')
+
+args = parser.parse_args()
+
 def load_config(fname: str) -> dict:
     return toml.load(fname)
 
@@ -54,8 +61,7 @@ experiences['sharing_programming_knowledge']['english']['description'].format(
 )
 
 meta_data = {
-    # 'static': r'C:\Users\ASUS\Documents\Github\hsiangjenli\static',
-    'static': 'https://hsiangjenli.github.io/hsiangjenli/static',
+    'static': args.static,
     'language': 'english',
     'author': author,
     "social_links": author['social_media'],
