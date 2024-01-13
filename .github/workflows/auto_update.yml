@@ -3,7 +3,7 @@ name: 'Submodules Sync'
 on:
   # Allows you to run this workflow manually from the Actions tab or through HTTP API
   push:
-    branches: [main]
+    branches: [html5]
 
 jobs:
   sync:
@@ -20,7 +20,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
       with:
-        ref: main
+        ref: html5
         token: ${{ secrets.ACCESS_TOKEN }}
         submodules: true
         
