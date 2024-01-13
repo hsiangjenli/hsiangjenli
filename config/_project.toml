@@ -32,6 +32,21 @@
     project_name = "2023 IT home 鐵人賽 - AI & Data"
     # project_description = "..."
 
+[scsb_social_network_crawler]
+    [scsb_social_network_crawler.basic_info]
+    period_start = "2023.07"
+    period_end = "2023.08"
+    project_type = "personal project"
+    external_link = "https://github.com/hsiangjenli/social-network-crawler/"
+    tags = ['Web Scraping', 'Dynamic Web Scraping', 'Selenium', 'BeautifulSoup', 'playwright']
+
+    [scsb_social_network_crawler.english]
+    project_name = "Web Scraping : Social Network Crawler"
+
+    [scsb_social_network_crawler.chinese]
+    project_name = "動態社群網路爬蟲"
+
+
 [tw_famous_ecommerce_keywords_recommendation_system]
     [tw_famous_ecommerce_keywords_recommendation_system.basic_info]
     period_start = "2023.05"
