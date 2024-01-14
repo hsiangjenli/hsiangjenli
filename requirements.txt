@@ -1,4 +1,0 @@
-jinja2
-toml
-requests
-beautifulsoup4
