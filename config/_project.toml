@@ -9,7 +9,7 @@
 
     [ntust_csie_ml_cybersecurity.english]
     project_name = "Evasion Attack in Machine Learning"
-    # project_description = "..."
+    project_description = ["We are trying to add some noise to the malware(binary file) to make it undetectable by the CNN model."]
 
     [ntust_csie_ml_cybersecurity.chinese]
     project_name = "..."
@@ -26,7 +26,7 @@
 
     [2023_ithome_ironman_challenge.english]
     project_name = "2023 IT home Ironman Challenge - AI and Data"
-    # project_description = "..."
+    project_description = ["I will try to learn and read some papers about Network Science and its application in 30 days."]
 
     [2023_ithome_ironman_challenge.chinese]
     project_name = "2023 IT home 鐵人賽 - AI & Data"
@@ -42,6 +42,10 @@
 
     [scsb_social_network_crawler.english]
     project_name = "Web Scraping : Social Network Crawler"
+    project_description = [
+        "Using Dynamic Web Scraping Packages (Selenium, Playwright etc.) to crawl social network data.",
+        "The data will be stored in MongoDB and can be used for further analysis."
+        ]
 
     [scsb_social_network_crawler.chinese]
     project_name = "動態社群網路爬蟲"
@@ -59,7 +63,9 @@
 
     [tw_famous_ecommerce_keywords_recommendation_system.english]
     project_name = "Graph-based : Keywords Recommendation System"
-    # project_description = "..."
+    project_description = [
+        "Applying Graph Theory/Network Science field to build a keywords recommendation system.",
+    ]
 
     [tw_famous_ecommerce_keywords_recommendation_system.chinese]
     project_name = "基於網路圖的關鍵字推薦系統"
@@ -76,7 +82,11 @@
 
     [tw_famous_ecommerce_find_identical_products.english]
     project_name = "Taiwan Famous Ecommerce : Find Identical Products"
-    # project_description = "..."
+    project_description = [
+        "Finding identical products from item's name is a quite challenging task.",
+        "Using Regular-Expression and CKIP-transformer to extract keywords from item's name.",
+        "And using dimension-reduction and cluster algorithms to find identical products."
+    ]
 
     [tw_famous_ecommerce_find_identical_products.chinese]
     project_name = "..."
@@ -94,7 +104,12 @@
 
     [apriori_j104.english]
     project_name = "Apriori J104"
-    # project_description = "..."
+    project_description = [
+        "An application for analyzing the skills required by the job market.",
+        "The data is crawled from 104 job bank and stored in MongoDB.",
+        "And the data will be processed by CKIP-transformer.",
+        "Finally, using apyori algorithm to find the association rules between skills."
+        ]
 
     [apriori_j104.chinese]
     project_name = "工作技能分析系統"
@@ -112,43 +127,46 @@
 
     [public_opinion_analysis.english]
     project_name = "Financial Public Opinion Analysis"
-    # project_description = "..."
+    project_description = [
+        "Using Django to build a web application for analyzing financial public opinion.",
+        "The data is crawled from Anue and the data will be stored in MongoDB.",
+    ]
 
     [public_opinion_analysis.chinese]
     project_name = "輿情分析系統"
     # project_description = "..."
 
 
-[webscraping_anue]
-    [webscraping_anue.basic_info]
-    period_start = "2022.04"
-    period_end = "2022.04"
-    project_type = "personal project"
-    external_link = "https://gitlab.com/tuxedo-web-scraping/anue"
-    image = "https://sfiles.cnyes.cool/fe-common/dd01f09f/76bfdbe59e3e432ffe6d5d203a37e64d.svg"
-    tags = ['Web Scraping', 'MongoDB']
+# [webscraping_anue]
+#     [webscraping_anue.basic_info]
+#     period_start = "2022.04"
+#     period_end = "2022.04"
+#     project_type = "personal project"
+#     external_link = "https://gitlab.com/tuxedo-web-scraping/anue"
+#     image = "https://sfiles.cnyes.cool/fe-common/dd01f09f/76bfdbe59e3e432ffe6d5d203a37e64d.svg"
+#     tags = ['Web Scraping', 'MongoDB']
 
-    [webscraping_anue.english]
-    project_name = "Web Scraping : Anue"
+#     [webscraping_anue.english]
+#     project_name = "Web Scraping : Anue"
 
-    [webscraping_anue.chinese]
-    project_name = "爬蟲 : Anue"
+#     [webscraping_anue.chinese]
+#     project_name = "爬蟲 : Anue"
     
 
-[webscraping_twse]
-    [webscraping_twse.basic_info]
-    period_start = "2021.12"
-    period_end = "2022.04"
-    project_type = "personal project"
-    external_link = "https://github.com/hsiangjenli/Web-Scraping-Challenge/tree/main/TWSE｜台灣證券交易所"
-    image = "image/rocket.svg"
-    tags = ['Web Scraping', 'SQLite', 'plotly']
+# [webscraping_twse]
+#     [webscraping_twse.basic_info]
+#     period_start = "2021.12"
+#     period_end = "2022.04"
+#     project_type = "personal project"
+#     external_link = "https://github.com/hsiangjenli/Web-Scraping-Challenge/tree/main/TWSE｜台灣證券交易所"
+#     image = "image/rocket.svg"
+#     tags = ['Web Scraping', 'SQLite', 'plotly']
 
-    [webscraping_twse.english]
-    project_name = "Web Scraping : TWSE"
+#     [webscraping_twse.english]
+#     project_name = "Web Scraping : TWSE"
 
-    [webscraping_twse.chinese]
-    project_name = "爬蟲 : 台灣證券交易所"
+#     [webscraping_twse.chinese]
+#     project_name = "爬蟲 : 台灣證券交易所"
 
 
 [linebot_stock_info]
@@ -162,6 +180,9 @@
 
     [linebot_stock_info.english]
     project_name = "Line-Bot : Stock Info"
+    project_description = [
+        "A Line-Bot for getting the stock information.",
+    ]
 
     [linebot_stock_info.chinese]
     project_name = "Line-Bot : 股票資訊"
