@@ -1,5 +1,5 @@
 html:
-	python auto_update.py --static $(PWD)/static
+	python3 auto.py
 
 gpa:
 	python3 core/gpa.py \
