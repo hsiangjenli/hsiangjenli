@@ -11,7 +11,7 @@ gpa:
 		--major "Computer Science and Information Engineering" \
 		--std_id "M11101T04" \
 		--std_name "Hsiang-Jen, Li" \
-		--output ntust.html
+		--output static/output/ntust.html
 
 	python3 core/gpa.py \
 		--input config/gpa.xlsx \
@@ -22,4 +22,9 @@ gpa:
 		--major "Department of Money and Banking" \
 		--std_id "C107125248" \
 		--std_name "Hsiang-Jen, Li" \
-		--output nkust.html
+		--output static/output/nkust.html
+
+pdf:
+	make gpa
+	weasyprint static/output/ntust.html static/pdf/transcript_ntust.pdf
+	weasyprint static/output/nkust.html static/pdf/transcript_nkust.pdf
