@@ -35,7 +35,7 @@ cv:
 	weasyprint static/output/cv_eng.html static/pdf/cv_eng.pdf
 
 push:
-	git rm -rf hsiangjenli.github.io
+	rm -rf hsiangjenli.github.io
 	git clone https://github.com/hsiangjenli/hsiangjenli.github.io.git
 	git add .
 	git commit -m "feat: update template"
