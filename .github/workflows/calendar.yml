@@ -16,3 +16,4 @@ jobs:
         token: ${{ github.token }}
         base: ""
         plugin_calendar: yes
+        plugin_calendar_limit: 1
