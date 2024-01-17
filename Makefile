@@ -1,5 +1,5 @@
 html:
-	python3 auto.py
+	python auto.py
 
 gpa:
 	python3 core/gpa.py \
@@ -33,3 +33,10 @@ pdf:
 cv:
 	python3 auto.py
 	weasyprint static/output/cv_eng.html static/pdf/cv_eng.pdf
+
+push:
+	git rm -rf hsiangjenli.github.io
+	git clone https://github.com/hsiangjenli/hsiangjenli.github.io.git
+	git add .
+	git commit -m "feat: update template"
+	git push origin html5
