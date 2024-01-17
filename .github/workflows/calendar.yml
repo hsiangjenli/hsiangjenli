@@ -1,4 +1,8 @@
 name: current year calendar
+on:
+  push:
+    branches: [readme]
+
 uses: lowlighter/metrics@latest
 with:
   filename: metrics.plugin.calendar.svg
