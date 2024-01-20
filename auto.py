@@ -11,6 +11,7 @@ GITHUB = "hsiangjenli"
 MAIL = "hsiangjenli@gmail.com"
 
 EDU = tutils.load_toml("config/_education.toml")
+EXP = tutils.load_toml("config/_experience.toml")
 SKILL = tutils.load_toml("config/_skill.toml")
 RI = tutils.load_toml("config/_research.toml")
 SIDE_PROJECT = tutils.load_toml("config/_project.toml")
@@ -44,6 +45,7 @@ if __name__ == "__main__":
 
     SEC_INFO = {
         "EDU": EDU,
+        "EXP": EXP,
         "SKILL": SKILL,
         "RI": RI,
         "SIDE_PROJECT": SIDE_PROJECT,
@@ -53,5 +55,5 @@ if __name__ == "__main__":
     O_WEBPAGE = WEBPAGE_TEMPLATE.render(**PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE)
     tutils.write(O_WEBPAGE, f"{WEBPAGE}/index.html")
 
-    O_CV_ENG = CV_ENG_TEMPLATE.render(**PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE, COLOR="#DC3522")
+    O_CV_ENG = CV_ENG_TEMPLATE.render(**PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE, COLOR="#DC3522", LANG="english")
     tutils.write(O_CV_ENG, f"static/output//cv_eng.html")

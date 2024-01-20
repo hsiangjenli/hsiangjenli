@@ -66,6 +66,31 @@ class GPA:
         
         return round(df["GPA"].sum() / df["Credits"].sum(), 2)
     
+    def total_credits(self, df: pd.DataFrame):
+        return df["Credits"].sum()
+    
+    def earned_credits(self, df: pd.DataFrame):
+        
+        df = df[df["Credits"] > 0]
+        df_p = df[df["Grade"] == "Pass"]
+        df = df[df["Grade"] != "Pass"]
+        
+        try:
+            df["Grade"] = df["Grade"].astype(float)
+        except ValueError:
+            pass
+        
+        if df["Grade"].dtypes == "object":
+            df["GPA"] = df["Grade"].map(self.gpamap)
+        
+        elif df["Grade"].dtypes in(["int64", "float64"]):
+            df["GPA"] = df["Grade"].apply(self.grade2gpa)
+
+        df = df[df["GPA"] > 1.0]
+        s = df["Credits"].sum() + df_p["Credits"].sum()
+
+        return s
+
     @property
     def gpa43(self):
         return {
@@ -224,6 +249,8 @@ if __name__ == '__main__':
         overall_gpa_score=overall_gpa_score,
         std_id=args.std_id,
         std_name=args.std_name,
+        total_credits=gpa.total_credits(df),
+        earned_credits=gpa.earned_credits(df)
     )
 
     with open(f'{args.output}', 'w') as f:

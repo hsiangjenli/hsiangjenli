@@ -5,7 +5,7 @@
 
     [complex_systems.english]
     name = "Complex Systems and Network Science"
-    description = "unlike grid-like data structures, complex systems are composed by nodes and edges, which are more complicated for analysis and modeling. "
+    description = "Unlike grid-like data structures, complex systems are composed by nodes and edges, which are more complicated for analysis and modeling. "
 
     [complex_systems.chinese]
     name = "複雜系統"
@@ -19,7 +19,7 @@
 
     [metaheuristics.english]
     name = "Metaheuristics"
-    # description = ""
+    description = "Metaheuristic is a bio-inspired algorithm that can be used to solve optimization problems."
 
     [metaheuristics.chinese]
     name = "啟發式演算法"
