@@ -1,4 +1,5 @@
 import os
+import shutil
 import datetime
 from core import tutils
 
@@ -21,14 +22,14 @@ AWARD = tutils.load_toml("config/_award.toml")
 WEBPAGE = "hsiangjenli.github.io"
 WEBPAGE_TEMPLATE = tutils.set_environemnt(folder='static/template/html/read_only', template='index.html')
 
-os.makedirs(f"{WEBPAGE}/static", exist_ok=True)
-os.system(f"cp -r static/* {WEBPAGE}/static/")
-
 # == CV ==============================================================================================================
 CV_ENG_TEMPLATE = tutils.set_environemnt(folder='static/template/html/cv_eng', template='index.html')
 
 # == main ============================================================================================================
 if __name__ == "__main__":
+    
+    shutil.rmtree(WEBPAGE, ignore_errors=True)
+    os.makedirs(f"{WEBPAGE}/static", exist_ok=True)
 
     LAST_UPDATE = datetime.datetime.now().strftime("%Y-%m-%d")
     YEAR = f"2024 ~ {datetime.datetime.now().year}" if datetime.datetime.now().year > 2024 else 2024
@@ -55,5 +56,10 @@ if __name__ == "__main__":
     O_WEBPAGE = WEBPAGE_TEMPLATE.render(**PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE)
     tutils.write(O_WEBPAGE, f"{WEBPAGE}/index.html")
 
-    O_CV_ENG = CV_ENG_TEMPLATE.render(**PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE, COLOR="#DC3522", LANG="english")
+    O_CV_ENG = CV_ENG_TEMPLATE.render(**PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE, COLOR="#DC3522", LANG="english", WEIGTH=2)
     tutils.write(O_CV_ENG, f"static/output//cv_eng.html")
+
+    # O_CV_CHN = CV_ENG_TEMPLATE.render(**PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE, COLOR="#DC3522", LANG="chinese")
+    # tutils.write(O_CV_CHN, f"static/output//cv_zh_tw.html")
+
+    os.system(f"cp -r static/* {WEBPAGE}/static/")

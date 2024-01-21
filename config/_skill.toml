@@ -12,6 +12,18 @@
         name = "Python"
         description = "..."
 
+    [language.julia]
+        [language.julia.basic_info]
+        level = "Beginner"
+        image = "fa-solid fa-code"
+
+        [language.julia.english]
+        name = "Julia"
+        description = "<a href='https://github.com/hsiangjenli/learn-julia'>click here.</a>"
+
+        [language.julia.chinese]
+        name = "Julia"
+        description = "..."
 
     [language.sql]
         [language.sql.basic_info]

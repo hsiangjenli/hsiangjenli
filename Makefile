@@ -27,12 +27,6 @@ gpa:
 	weasyprint static/output/ntust.html static/pdf/transcript_ntust.pdf
 	weasyprint static/output/nkust.html static/pdf/transcript_nkust.pdf
 
-pdf:
-	make gpa
-	weasyprint static/output/ntust.html static/pdf/transcript_ntust.pdf
-	weasyprint static/output/nkust.html static/pdf/transcript_nkust.pdf
-
-
 cv:
 	python auto.py
 	weasyprint static/output/cv_eng.html static/pdf/cv_eng.pdf
