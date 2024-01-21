@@ -28,7 +28,7 @@ CV_ENG_TEMPLATE = tutils.set_environemnt(folder='static/template/html/cv_eng', t
 # == main ============================================================================================================
 if __name__ == "__main__":
     
-    shutil.rmtree(WEBPAGE, ignore_errors=True)
+    shutil.rmtree(f"{WEBPAGE}/static", ignore_errors=True)
     os.makedirs(f"{WEBPAGE}/static", exist_ok=True)
 
     LAST_UPDATE = datetime.datetime.now().strftime("%Y-%m-%d")
