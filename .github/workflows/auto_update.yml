@@ -41,7 +41,7 @@ jobs:
       with:
           image: minidocks/weasyprint
           options: -v ${{ github.workspace }}:/app -w /app --user=root
-          run: static/output/cv_eng.html static/pdf/cv_eng.pdf
+          run: weasyprint static/output/cv_eng.html static/pdf/cv_eng.pdf
     # ------------------------------------------------------------------------------------------------------------------------------
     - name: Copy Static Folder
       run: cp -r static/* hsiangjenli.github.io/static/
