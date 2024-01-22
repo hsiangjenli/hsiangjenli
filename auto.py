@@ -61,5 +61,3 @@ if __name__ == "__main__":
 
     # O_CV_CHN = CV_ENG_TEMPLATE.render(**PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE, COLOR="#DC3522", LANG="chinese")
     # tutils.write(O_CV_CHN, f"static/output//cv_zh_tw.html")
-
-    os.system(f"cp -r static/* {WEBPAGE}/static/")
