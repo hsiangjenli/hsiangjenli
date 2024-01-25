@@ -165,7 +165,19 @@
     #     [tool.hadoop.chinese]
     #     name = "Hadoop"
     #     description = "..."
+[CI_CD]
+    [CI_CD.github_actions]
+        [CI_CD.github_actions.basic_info]
+        level = "Beginner"
+        image = "fa-solid fa-code-compare"
 
+        [CI_CD.github_actions.english]
+        name = "Github Actions"
+        # description = "..."
+
+        [CI_CD.github_actions.chinese]
+        name = "Github Actions"
+        description = "..."
 
 [platform]
     [platform.ubuntu]

@@ -4,7 +4,7 @@ import datetime
 from core import tutils
 
 # == personal information ============================================================================================
-Q = "The way lead to success is your own resolution."
+Q = "<p>The way lead to success is your own resolution.</p><p>咬得菜根，則百事可做。</p>"
 
 NAME = "Hsiang-Jen Li"
 NICKNAME = "RN"

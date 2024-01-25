@@ -1,5 +1,6 @@
 html:
 	python auto.py
+	cp -r static/* hsiangjenli.github.io/static
 
 gpa:
 	python3 core/gpa.py \
