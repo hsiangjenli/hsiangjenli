@@ -33,6 +33,7 @@ cv:
 	weasyprint static/output/cv_eng.html static/pdf/cv_eng.pdf
 
 push:
+	git pull origin html5
 	rm -rf hsiangjenli.github.io
 	git clone https://github.com/hsiangjenli/hsiangjenli.github.io.git
 	git add .
