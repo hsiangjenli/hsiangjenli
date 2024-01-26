@@ -1,10 +1,11 @@
 import os
 import shutil
+import requests
 import datetime
 from core import tutils
 
 # == personal information ============================================================================================
-Q = "<p>The way lead to success is your own resolution.</p><p>咬得菜根，則百事可做。</p>"
+Q = "<div>The way lead to success is your own resolution.</div><div>咬得菜根，則百事可做。</div>"
 
 NAME = "Hsiang-Jen Li"
 NICKNAME = "RN"
@@ -17,6 +18,8 @@ SKILL = tutils.load_toml("config/_skill.toml")
 RI = tutils.load_toml("config/_research.toml")
 SIDE_PROJECT = tutils.load_toml("config/_project.toml")
 AWARD = tutils.load_toml("config/_award.toml")
+BLOG_POST = requests.get("https://hsiangjenli.github.io/blog/api/getPosts/").json()['data']['posts']
+BLOG_POST = sorted(BLOG_POST, key=lambda x: x['date'], reverse=True)
 
 # == webpage ==========================================================================================================
 WEBPAGE = "hsiangjenli.github.io"
@@ -50,6 +53,7 @@ if __name__ == "__main__":
         "SKILL": SKILL,
         "RI": RI,
         "SIDE_PROJECT": SIDE_PROJECT,
+        "BLOG_POST": BLOG_POST,
         "AWARD": AWARD,
     }
 
