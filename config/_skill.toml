@@ -82,18 +82,18 @@
         description = "..."
 
 
-    # [website.css_scss]
-    #     [website.css_scss.basic_info]
-    #     level = "Beginner"
-    #     image = "fa-brands fa-css3"
+    [website.css_scss]
+        [website.css_scss.basic_info]
+        level = "Beginner"
+        image = "fa-brands fa-css3"
 
-    #     [website.css_scss.english]
-    #     name = "CSS/SCSS"
-    #     # description = "..."
+        [website.css_scss.english]
+        name = "CSS/SCSS"
+        # description = "..."
 
-    #     [website.css_scss.chinese]
-    #     name = "CSS/SCSS"
-    #     description = "..."
+        [website.css_scss.chinese]
+        name = "CSS/SCSS"
+        description = "..."
 
 
     [website.bootstrap]
@@ -177,6 +177,19 @@
 
         [CI_CD.github_actions.chinese]
         name = "Github Actions"
+        description = "..."
+    
+    [CI_CD.MLflow]
+        [CI_CD.MLflow.basic_info]
+        level = "Beginner"
+        image = "fa-solid fa-gauge-high"
+
+        [CI_CD.MLflow.english]
+        name = "MLflow"
+        description = "using MLflow to track experiments and mointor the hardware usage."
+
+        [CI_CD.MLflow.chinese]
+        name = "MLflow"
         description = "..."
 
 [platform]

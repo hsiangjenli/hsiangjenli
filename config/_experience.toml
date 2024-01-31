@@ -41,16 +41,16 @@
 #     title = "撰寫 IT Blog"
 
 
-# [nkust_ccet_ta]
-#     [nkust_ccet_ta.basic_info]
-#     period_start = "2021.09"
-#     period_end = "2022.01"
-#     image = "image/nkust.png"
+[nkust_ccet_ta]
+    [nkust_ccet_ta.basic_info]
+    period_start = "2021.09"
+    period_end = "2022.01"
+    image = "image/nkust.png"
 
-#     [nkust_ccet_ta.english]
-#     title = "National Kaohsiung University of Science and Technology"
-#     description = "Cross College Elite Tech Program - Data Science - Teaching assistant"
+    [nkust_ccet_ta.english]
+    title = "National Kaohsiung University of Science and Technology"
+    description = "Cross College Elite Tech Program - Data Science - Teaching assistant"
 
-#     [nkust_ccet_ta.chinese]
-#     title = "國立高雄科技大學"
-#     description = "高瞻科技不分系 資料科學 助教"
+    [nkust_ccet_ta.chinese]
+    title = "國立高雄科技大學"
+    description = "高瞻科技不分系 資料科學 助教"

@@ -30,7 +30,8 @@ gpa:
 
 cv:
 	python auto.py
-	weasyprint static/output/cv_eng.html static/pdf/cv_eng.pdf
+	weasyprint static/output/cv_eng.html -s static/css/cv.css static/pdf/cv_eng.pdf
+	weasyprint static/output/cv_zh_tw.html -s static/css/cv.css static/pdf/cv_zh_tw.pdf
 
 push:
 	git pull origin html5

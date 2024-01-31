@@ -11,6 +11,8 @@ NAME = "Hsiang-Jen Li"
 NICKNAME = "RN"
 GITHUB = "hsiangjenli"
 MAIL = "hsiangjenli@gmail.com"
+IT_BLOG = "https://hsiangjenli.github.io/blog/"
+CHEATSHEET = "https://hsiangjenli.github.io/cheat-sheet/"
 
 EDU = tutils.load_toml("config/_education.toml")
 EXP = tutils.load_toml("config/_experience.toml")
@@ -27,7 +29,6 @@ WEBPAGE_TEMPLATE = tutils.set_environemnt(folder='static/template/html/read_only
 
 # == CV ==============================================================================================================
 CV_ENG_TEMPLATE = tutils.set_environemnt(folder='static/template/html/cv_eng', template='index.html')
-
 # == main ============================================================================================================
 if __name__ == "__main__":
     
@@ -45,6 +46,8 @@ if __name__ == "__main__":
         "GITHUB": GITHUB,
         "MAIL": MAIL,
         "COPYRIGHT": COPYRIGHT,
+        "IT_BLOG": IT_BLOG,
+        "CHEATSHEET": CHEATSHEET,
     }
 
     SEC_INFO = {
@@ -60,8 +63,8 @@ if __name__ == "__main__":
     O_WEBPAGE = WEBPAGE_TEMPLATE.render(**PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE)
     tutils.write(O_WEBPAGE, f"{WEBPAGE}/index.html")
 
-    O_CV_ENG = CV_ENG_TEMPLATE.render(**PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE, COLOR="#DC3522", LANG="english", WEIGTH=2)
-    tutils.write(O_CV_ENG, f"static/output//cv_eng.html")
+    O_CV_ENG = CV_ENG_TEMPLATE.render(**PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE, COLOR="#b84646", LANG="english", WEIGTH=2)
+    tutils.write(O_CV_ENG, f"static/output/cv_eng.html")
 
-    # O_CV_CHN = CV_ENG_TEMPLATE.render(**PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE, COLOR="#DC3522", LANG="chinese")
-    # tutils.write(O_CV_CHN, f"static/output//cv_zh_tw.html")
+    O_CV_CHN = CV_ENG_TEMPLATE.render(**PERSONAL_INFO, **SEC_INFO, LAST_UPDATE=LAST_UPDATE, COLOR="#DC3522", LANG="chinese", WEIGTH=2)
+    tutils.write(O_CV_CHN, f"static/output/cv_zh_tw.html")
