@@ -1,11 +1,9 @@
 name: 'Deploy my Static Website'
 
 on:
+  schedule: [{cron: "0 0 * * 0"}]
   push:
     branches: [html5]
-  schedule:
-    - cron: '0 0 * * 4'
-      timezone: 'Asia/Taipei'
 
 jobs:
   sync:
