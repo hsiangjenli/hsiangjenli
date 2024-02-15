@@ -58,5 +58,4 @@ jobs:
         git config --global user.email 'bot@noreply.github.com'
         git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.github.io
         git add .
-        git checkout main
         git commit -am "auto: updated by github workflow" && git push origin main|| echo "No changes to commit"
