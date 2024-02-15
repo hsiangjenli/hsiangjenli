@@ -8,6 +8,7 @@ from core import tutils
 Q = "<div>The way lead to success is your own resolution.</div><div>得常咬菜根，即做百事成。</div>"
 
 NAME = "Hsiang-Jen Li"
+ZH_TW_NAME = "李享紝"
 NICKNAME = "RN"
 GITHUB = "hsiangjenli"
 MAIL = "hsiangjenli@gmail.com"
@@ -42,6 +43,7 @@ if __name__ == "__main__":
     PERSONAL_INFO = {
         "Q": Q,
         "NAME": NAME,
+        "ZH_TW_NAME": ZH_TW_NAME, 
         "NICKNAME": NICKNAME,
         "GITHUB": GITHUB,
         "MAIL": MAIL,

@@ -1,6 +1,26 @@
 # odd number is finance related project
 # even number is computer science related project
 
+[pypi_dimg4md]
+    [pypi_dimg4md.basic_info]
+    period_start = "2024.02"
+    period_end = "2024.02"
+    project_type = "personal project"
+    external_link = "https://github.com/hsiangjenli/pyimg4md"
+    tags = ['Python', 'Markdown']
+    weight = 2
+    pypi = "py-dimg4md"
+
+    [pypi_dimg4md.english]
+    project_name = "DIMG4MD"
+    project_description = [
+        "A Python package for automatically download the image from the markdown file and save it to the local folder.",
+    ]
+
+    [pypi_dimg4md.chinese]
+    project_name = "DIMG4MD"
+    # project_description = "..."
+
 [learn_julia]
     [learn_julia.basic_info]
     period_start = "2024.01"
