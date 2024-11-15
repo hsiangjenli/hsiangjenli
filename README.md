@@ -8,5 +8,8 @@
 - 📝 ・ Paper Digest ・ https://hsiangjenli.github.io/paper-digest
 - 📝 ・ Note LLM ・ https://hsiangjenli.github.io/note-llm
 
+--
+- ❤️‍🔥 ・ Research interests include Network Science, Privacy-Preserving Machine Learning, and Metaheuristics
+
 --  
 - 🎓 ・ SiMS Lab ・ https://ntust-sims-lab.github.io/it-blog ・ I've graduated, but I ❤️ this lab     
