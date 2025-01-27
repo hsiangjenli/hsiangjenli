@@ -10,6 +10,7 @@
 
 --
 - ❤️‍🔥 ・ Research interests include Network Science, Privacy-Preserving Machine Learning, and Metaheuristics
+- ✉️ ・ I am looking for opportunities to collaborate on projects related to these topics. Feel free to drop me an [email](hsiangjenli@gmail.com) !!!
 
 --  
 - 🎓 ・ SiMS Lab ・ https://ntust-sims-lab.github.io/it-blog ・ I've graduated, but I ❤️ this lab     
