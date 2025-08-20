@@ -1,6 +1,7 @@
 ## Hi, I'm Hsiang-Jen Li (Reon) ! 👋
 
 - 🤖 ・ Website ・ https://hsiangjenli.github.io
+- 🌳 ・ Currently working at Cathay Financial Holdings – Open Source Innovation team as a DevOps Engineer
 
 --  
 - 🖥️ ・ IT Blog ・ https://hsiangjenli.github.io/blog
@@ -15,3 +16,4 @@
 
 --  
 - 🎓 ・ SiMS Lab ・ https://ntust-sims-lab.github.io/it-blog ・ I've graduated, but I ❤️ this lab.
+
